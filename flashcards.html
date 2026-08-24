@@ -33,6 +33,7 @@
         <label class="flash-check"><input type="checkbox" id="mode-reverse" /> Sens inverse (arabe → FR)</label>
         <label class="flash-check"><input type="checkbox" id="mode-listen" /> Mode écoute (écoute → répète → FR)</label>
         <label class="flash-check"><input type="checkbox" id="mode-dictee" /> Mode dictée (FR → tape le latn)</label>
+        <label class="flash-check"><input type="checkbox" id="mode-typing" /> Mode clavier arabe (vois l’arabe → retape)</label>
       </div>
 
       <button type="button" class="btn btn-block" id="btn-start">Commencer</button>
@@ -58,7 +59,8 @@
       </div>
 
       <div class="dictee-wrap" id="dictee-wrap" hidden>
-        <label class="field-label" for="dictee-input">Écris en latn</label>
+        <p class="typing-live" id="typing-live" hidden dir="rtl" lang="ar"></p>
+        <label class="field-label" id="dictee-label" for="dictee-input">Écris en latn</label>
         <input
           type="text"
           id="dictee-input"
@@ -71,6 +73,7 @@
           placeholder="ex. salam 3likoum"
           dir="ltr"
         />
+        <p class="dictee-tip" id="dictee-tip" hidden>Astuce : Win + Espace pour passer au clavier arabe.</p>
         <div class="dictee-actions">
           <button type="button" class="btn" id="btn-dictee-check">Vérifier</button>
           <button type="button" class="btn secondary" id="btn-dictee-speak" title="Écouter l'arabe">🔊</button>

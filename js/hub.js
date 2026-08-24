@@ -62,6 +62,8 @@
         if (listenBtn) listenBtn.href = links.listen;
         var dicteeBtn = document.getElementById("today-dictee");
         if (dicteeBtn) dicteeBtn.href = links.dictee;
+        var typingBtn = document.getElementById("today-typing");
+        if (typingBtn) typingBtn.href = links.typing;
         document.getElementById("today-card").hidden = false;
 
         var failed = (STORE.get().failed || []).length;

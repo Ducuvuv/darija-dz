@@ -861,6 +861,66 @@ a:hover { color: var(--accent-2); }
   font-weight: 700;
   color: #fde68a;
 }
+.dictee-feedback .arab {
+  font-family: var(--arab);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.dictee-tip {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+.dictee-input.arab-input {
+  font-family: var(--arab);
+  font-size: 1.45rem;
+  direction: rtl;
+  text-align: right;
+}
+.dictee-input.ok {
+  border-color: rgba(74, 180, 110, 0.65);
+}
+.dictee-input.bad {
+  border-color: rgba(220, 90, 90, 0.65);
+}
+.dictee-input.partial {
+  border-color: rgba(217, 119, 6, 0.7);
+}
+.typing-model {
+  margin-bottom: 0.35rem;
+}
+.typing-fr {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin: 0.35rem 0 0;
+}
+.typing-live {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0 0 0.15rem;
+}
+.typing-meter {
+  display: block;
+  height: 6px;
+  border-radius: 99px;
+  background: rgba(217, 119, 6, 0.15);
+  overflow: hidden;
+}
+.typing-meter i {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+  border-radius: 99px;
+  width: 0;
+  transition: width 0.12s ease;
+}
+.typing-live.ok .typing-meter i { background: #4ade80; }
+.typing-live.bad .typing-meter i { background: #f87171; }
+.typing-count {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--muted);
+}
 .flash-card.dictee-card {
   cursor: default;
 }
