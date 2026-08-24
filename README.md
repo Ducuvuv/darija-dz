@@ -94,6 +94,8 @@ Sens inverse une fois sur deux (arabe → français) à partir de la 2ᵉ semain
 
 | [08-phrases-b2.md](08-phrases-b2.md) | Phrases B1–B2 + entretien | ~80 | **général** |
 
+| [15-phrases-suite.md](15-phrases-suite.md) | Phrases suite — café, WhatsApp, fac… | ~250 | **général** |
+
 | [04-verbes.md](04-verbes.md) | 12 verbes conjugués | 12 | général |
 
 | [01-lexique-setif.md](01-lexique-setif.md) | Marqueurs **Sétif** | ~45 | bonus Est |
@@ -102,7 +104,7 @@ Sens inverse une fois sur deux (arabe → français) à partir de la 2ᵉ semain
 
 
 
-**Total : ~1 570 entrées** (~1 205 mots + ~180 idiomes + ~155 phrases + bonus Sétif) — **couverture B2 complète** + écoute pour la fluidité.
+**Total : ~1 820 entrées** (~1 205 mots + ~180 idiomes + ~405 phrases + bonus Sétif) — **couverture B2** + écoute pour la fluidité.
 
 
 
@@ -116,7 +118,7 @@ Sens inverse une fois sur deux (arabe → français) à partir de la 2ᵉ semain
 
 3. `07` + `12` (5 idiomes/session)
 
-4. `08` quand tu tiens 2 min de conversation
+4. `08` + `15` (phrases) quand tu tiens 2 min de conversation
 
 5. `01` si Sétif · `05` **chaque semaine**
 

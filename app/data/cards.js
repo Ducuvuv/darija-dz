@@ -1,14 +1,14 @@
 /* AUTO-GENERATED — python scripts/build-data.py */
 window.DAR_DATA = {
   "meta": {
-    "generated": "2026-08-24T22:23:40.104476+00:00",
+    "generated": "2026-08-24T22:37:50.175281+00:00",
     "version": 1,
     "stats": {
-      "cards": 1566,
-      "decks": 90,
+      "cards": 1816,
+      "decks": 106,
       "words": 1236,
       "idioms": 180,
-      "phrases": 150,
+      "phrases": 400,
       "verbs": 12,
       "quizzes": 5,
       "dialogues": 5,
@@ -825,6 +825,150 @@ window.DAR_DATA = {
       "kind": "idiom",
       "bonus": false,
       "count": 10
+    },
+    {
+      "id": "15-amis-sortie-loisirs",
+      "title": "Amis, sortie, loisirs",
+      "source": "15-phrases-suite.md",
+      "niv": "A1",
+      "kind": "phrase",
+      "bonus": false,
+      "count": 20
+    },
+    {
+      "id": "15-argent-courses-march",
+      "title": "Argent, courses, marché",
+      "source": "15-phrases-suite.md",
+      "niv": "A1",
+      "kind": "phrase",
+      "bonus": false,
+      "count": 20
+    },
+    {
+      "id": "15-caf-resto-table",
+      "title": "Café, resto, table",
+      "source": "15-phrases-suite.md",
+      "niv": "A1",
+      "kind": "phrase",
+      "bonus": false,
+      "count": 20
+    },
+    {
+      "id": "15-fac-tudes-examens",
+      "title": "Fac, études, examens",
+      "source": "15-phrases-suite.md",
+      "niv": "A1",
+      "kind": "phrase",
+      "bonus": false,
+      "count": 20
+    },
+    {
+      "id": "15-maison-famille-voisinage",
+      "title": "Maison, famille, voisinage",
+      "source": "15-phrases-suite.md",
+      "niv": "A1",
+      "kind": "phrase",
+      "bonus": false,
+      "count": 20
+    },
+    {
+      "id": "15-motions-relations",
+      "title": "Émotions & relations",
+      "source": "15-phrases-suite.md",
+      "niv": "A1",
+      "kind": "phrase",
+      "bonus": false,
+      "count": 15
+    },
+    {
+      "id": "15-mto-saisons",
+      "title": "Météo & saisons",
+      "source": "15-phrases-suite.md",
+      "niv": "A1",
+      "kind": "phrase",
+      "bonus": false,
+      "count": 10
+    },
+    {
+      "id": "15-opinions-oral-b2",
+      "title": "Opinions & oral B2",
+      "source": "15-phrases-suite.md",
+      "niv": "B2",
+      "kind": "phrase",
+      "bonus": false,
+      "count": 10
+    },
+    {
+      "id": "15-quotidien-express",
+      "title": "Quotidien express",
+      "source": "15-phrases-suite.md",
+      "niv": "A1",
+      "kind": "phrase",
+      "bonus": false,
+      "count": 20
+    },
+    {
+      "id": "15-sant-bien-tre",
+      "title": "Santé & bien-être",
+      "source": "15-phrases-suite.md",
+      "niv": "A1",
+      "kind": "phrase",
+      "bonus": false,
+      "count": 15
+    },
+    {
+      "id": "15-situations-urgentes-politesse-forte",
+      "title": "Situations urgentes & politesse forte",
+      "source": "15-phrases-suite.md",
+      "niv": "A1",
+      "kind": "phrase",
+      "bonus": false,
+      "count": 10
+    },
+    {
+      "id": "15-tech-internet-admin-digital",
+      "title": "Tech, internet, admin digital",
+      "source": "15-phrases-suite.md",
+      "niv": "A1",
+      "kind": "phrase",
+      "bonus": false,
+      "count": 10
+    },
+    {
+      "id": "15-transport-ville",
+      "title": "Transport & ville",
+      "source": "15-phrases-suite.md",
+      "niv": "A1",
+      "kind": "phrase",
+      "bonus": false,
+      "count": 15
+    },
+    {
+      "id": "15-travail-bureau",
+      "title": "Travail & bureau",
+      "source": "15-phrases-suite.md",
+      "niv": "A1",
+      "kind": "phrase",
+      "bonus": false,
+      "count": 15
+    },
+    {
+      "id": "15-voyages-vacances",
+      "title": "Voyages & vacances",
+      "source": "15-phrases-suite.md",
+      "niv": "A1",
+      "kind": "phrase",
+      "bonus": false,
+      "count": 10
+    },
+    {
+      "id": "15-whatsapp-tlphone-rseaux",
+      "title": "WhatsApp, téléphone, réseaux",
+      "source": "15-phrases-suite.md",
+      "niv": "A1",
+      "kind": "phrase",
+      "bonus": false,
+      "count": 20
     }
   ],
   "cards": [
@@ -23073,6 +23217,3506 @@ window.DAR_DATA = {
       "niv": "B2",
       "tags": [
         "societe"
+      ]
+    },
+    {
+      "id": "PH-261",
+      "deck": "15-caf-resto-table",
+      "type": "phrase",
+      "fr": "On va prendre un café ?",
+      "arab": "نْرُوحُوا نَشْرَبُوا قَهْوَة ؟",
+      "latn": "nrou7ou nechrabou 9ahwa?",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "nourriture"
+      ]
+    },
+    {
+      "id": "PH-262",
+      "deck": "15-caf-resto-table",
+      "type": "phrase",
+      "fr": "Je prends un thé à la menthe.",
+      "arab": "نَاخُدْ أَتَايْ بَالنَّعْنَاعْ",
+      "latn": "nakhod atay b en-na3na3",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "nourriture"
+      ]
+    },
+    {
+      "id": "PH-263",
+      "deck": "15-caf-resto-table",
+      "type": "phrase",
+      "fr": "Sans sucre, s’il te plaît.",
+      "arab": "بْلَا سُكَّرْ، عَفَاكْ",
+      "latn": "bla sokkar, 3afak",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "nourriture"
+      ]
+    },
+    {
+      "id": "PH-264",
+      "deck": "15-caf-resto-table",
+      "type": "phrase",
+      "fr": "Avec du lait.",
+      "arab": "بَالْحْلِيبْ",
+      "latn": "b el-7lib",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "nourriture"
+      ]
+    },
+    {
+      "id": "PH-265",
+      "deck": "15-caf-resto-table",
+      "type": "phrase",
+      "fr": "C’est trop sucré pour moi.",
+      "arab": "حْلُو بَزَّافْ عْلِيَّا",
+      "latn": "7lou bezzaf 3liya",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "nourriture"
+      ]
+    },
+    {
+      "id": "PH-266",
+      "deck": "15-caf-resto-table",
+      "type": "phrase",
+      "fr": "T’as fini ? On commande l’addition.",
+      "arab": "كَمَّلْتْ ؟ نْطَلْبُوا الْحْسَابْ",
+      "latn": "kemmelt? netolbou el-7sab",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "resto"
+      ]
+    },
+    {
+      "id": "PH-267",
+      "deck": "15-caf-resto-table",
+      "type": "phrase",
+      "fr": "C’était délicieux, merci.",
+      "arab": "كَانَت بْنِينَة، صَحَّة",
+      "latn": "kanet bnina, sahha",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "resto"
+      ]
+    },
+    {
+      "id": "PH-268",
+      "deck": "15-caf-resto-table",
+      "type": "phrase",
+      "fr": "Je veux la même chose que lui.",
+      "arab": "نَبْغِي كِيفْ مَا خَادْ هُوَ",
+      "latn": "nbghi kif ma khad howa",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "resto"
+      ]
+    },
+    {
+      "id": "PH-269",
+      "deck": "15-caf-resto-table",
+      "type": "phrase",
+      "fr": "Y’a du menu du jour ?",
+      "arab": "كَايِنْ مِينُو تَاعْ الْيُومْ ؟",
+      "latn": "kayen menu ta3 el-youm?",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "resto"
+      ]
+    },
+    {
+      "id": "PH-270",
+      "deck": "15-caf-resto-table",
+      "type": "phrase",
+      "fr": "Je suis végétarien.",
+      "arab": "رَانِي نَبَاتِي",
+      "latn": "rani nabati",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "nourriture"
+      ]
+    },
+    {
+      "id": "PH-271",
+      "deck": "15-caf-resto-table",
+      "type": "phrase",
+      "fr": "Sans viande, s’il vous plaît.",
+      "arab": "بْلَا لْحَمْ، اللَّهْ يْخَلِّيكُومْ",
+      "latn": "bla l7am, llah ykhellikom",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "nourriture"
+      ]
+    },
+    {
+      "id": "PH-272",
+      "deck": "15-caf-resto-table",
+      "type": "phrase",
+      "fr": "Partageons l’addition.",
+      "arab": "نَقَسْمُوا الْحْسَابْ",
+      "latn": "nqesmou el-7sab",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "resto"
+      ]
+    },
+    {
+      "id": "PH-273",
+      "deck": "15-caf-resto-table",
+      "type": "phrase",
+      "fr": "C’est mon invitation.",
+      "arab": "هَادِي عْلِيَّا",
+      "latn": "hadi 3liya",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "resto"
+      ]
+    },
+    {
+      "id": "PH-274",
+      "deck": "15-caf-resto-table",
+      "type": "phrase",
+      "fr": "La cuisine est trop épicée.",
+      "arab": "الْمَاكْلَة حَارَّة بَزَّافْ",
+      "latn": "el-makla 7arra bezzaf",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "nourriture"
+      ]
+    },
+    {
+      "id": "PH-275",
+      "deck": "15-caf-resto-table",
+      "type": "phrase",
+      "fr": "Encore un peu d’eau, s’il te plaît.",
+      "arab": "زِيدْ شْوِيَّة مَا، عَفَاكْ",
+      "latn": "zid chwiya ma, 3afak",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "nourriture"
+      ]
+    },
+    {
+      "id": "PH-276",
+      "deck": "15-caf-resto-table",
+      "type": "phrase",
+      "fr": "On mange chez moi ce soir.",
+      "arab": "نَاكْلُوا عَنْدِي الْعَشِيَّة",
+      "latn": "naklou 3andi el-3achiya",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "nourriture"
+      ]
+    },
+    {
+      "id": "PH-277",
+      "deck": "15-caf-resto-table",
+      "type": "phrase",
+      "fr": "Qu’est-ce que tu as préparé ?",
+      "arab": "وَاشْ طَيَّبْتْ ؟",
+      "latn": "wesh tayyebt?",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "nourriture"
+      ]
+    },
+    {
+      "id": "PH-278",
+      "deck": "15-caf-resto-table",
+      "type": "phrase",
+      "fr": "J’ai faim, on passe au resto.",
+      "arab": "رَانِي جِيعَانْ، نْدُوزُوا عْلَى رِيسْتُو",
+      "latn": "rani ji3an, ndouzou 3la resto",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "resto"
+      ]
+    },
+    {
+      "id": "PH-279",
+      "deck": "15-caf-resto-table",
+      "type": "phrase",
+      "fr": "Réserve une table pour quatre.",
+      "arab": "دِيرْ رِزِيرْفَاسْيُونْ لْرَبْعَة",
+      "latn": "dir réservation l-reb3a",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "resto"
+      ]
+    },
+    {
+      "id": "PH-280",
+      "deck": "15-caf-resto-table",
+      "type": "phrase",
+      "fr": "Le service était lent.",
+      "arab": "الْخِدْمَة كَانَت بْطِيئَة",
+      "latn": "el-khedma kanet bti2a",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "resto"
+      ]
+    },
+    {
+      "id": "PH-281",
+      "deck": "15-whatsapp-tlphone-rseaux",
+      "type": "phrase",
+      "fr": "Appelle-moi quand tu arrives.",
+      "arab": "عَيَّطْلِي كِي تُوصَلْ",
+      "latn": "3ayetli ki twassel",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "phone"
+      ]
+    },
+    {
+      "id": "PH-282",
+      "deck": "15-whatsapp-tlphone-rseaux",
+      "type": "phrase",
+      "fr": "Je t’envoie un message WhatsApp.",
+      "arab": "نْصِيفْطَكْ مِسَاجْ فِي الْوَاتْسَابْ",
+      "latn": "nsiftak message fi l-WhatsApp",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "phone"
+      ]
+    },
+    {
+      "id": "PH-283",
+      "deck": "15-whatsapp-tlphone-rseaux",
+      "type": "phrase",
+      "fr": "T’as vu mon message ?",
+      "arab": "شُفْتْ الْمِسَاجْ تَاعِي ؟",
+      "latn": "chouft el-message ta3i?",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "phone"
+      ]
+    },
+    {
+      "id": "PH-284",
+      "deck": "15-whatsapp-tlphone-rseaux",
+      "type": "phrase",
+      "fr": "Le réseau est mauvais ici.",
+      "arab": "الرِّيزُو خَايَبْ هْنَا",
+      "latn": "er-réseau khayeb hna",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "tech"
+      ]
+    },
+    {
+      "id": "PH-285",
+      "deck": "15-whatsapp-tlphone-rseaux",
+      "type": "phrase",
+      "fr": "Je te rappelle dans cinq minutes.",
+      "arab": "نْعَاوَدْ نْعَيَّطْلَكْ فِي خَمْسَة دَقَايَقْ",
+      "latn": "n3awed n3ayetlek fi khemsa daqayeq",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "phone"
+      ]
+    },
+    {
+      "id": "PH-286",
+      "deck": "15-whatsapp-tlphone-rseaux",
+      "type": "phrase",
+      "fr": "Envoie-moi ta localisation.",
+      "arab": "صِيفْطْلِي الْمَوْقِعْ تَاعَكْ",
+      "latn": "siftli el-mawqi3 ta3ek",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "phone"
+      ]
+    },
+    {
+      "id": "PH-287",
+      "deck": "15-whatsapp-tlphone-rseaux",
+      "type": "phrase",
+      "fr": "On fait un appel vidéo ?",
+      "arab": "نْدِيرُوا فِيدْيُو كُولْ ؟",
+      "latn": "ndirou vidéo call?",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "phone"
+      ]
+    },
+    {
+      "id": "PH-288",
+      "deck": "15-whatsapp-tlphone-rseaux",
+      "type": "phrase",
+      "fr": "Ma batterie est presque morte.",
+      "arab": "الْبَاطَرِي رَاهِي تْمُوتْ",
+      "latn": "el-batterie rahi tmout",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "tech"
+      ]
+    },
+    {
+      "id": "PH-289",
+      "deck": "15-whatsapp-tlphone-rseaux",
+      "type": "phrase",
+      "fr": "T’as le wifi password ?",
+      "arab": "عَنْدَكْ الْمُوتْ دِي بَاسْ تَاعْ الْوِيفِي ؟",
+      "latn": "3andek el-mot de passe ta3 el-wifi?",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "tech"
+      ]
+    },
+    {
+      "id": "PH-290",
+      "deck": "15-whatsapp-tlphone-rseaux",
+      "type": "phrase",
+      "fr": "Je suis en ligne, dis-moi.",
+      "arab": "رَانِي كُونِيكْتِي، قُولِي",
+      "latn": "rani connecté, qouli",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "phone"
+      ]
+    },
+    {
+      "id": "PH-291",
+      "deck": "15-whatsapp-tlphone-rseaux",
+      "type": "phrase",
+      "fr": "J’ai posté une story.",
+      "arab": "دَرْتْ سْتُورِي",
+      "latn": "dart story",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "media"
+      ]
+    },
+    {
+      "id": "PH-292",
+      "deck": "15-whatsapp-tlphone-rseaux",
+      "type": "phrase",
+      "fr": "Like mon post.",
+      "arab": "دِيرْ لَايْكْ لِلْبُوسْتْ تَاعِي",
+      "latn": "dir like lel-post ta3i",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "media"
+      ]
+    },
+    {
+      "id": "PH-293",
+      "deck": "15-whatsapp-tlphone-rseaux",
+      "type": "phrase",
+      "fr": "Ne partage pas ça, c’est privé.",
+      "arab": "مَا تْشَارِيكِيشْ هَادَا، خَاصْ",
+      "latn": "ma tsharekich hada, khas",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "media"
+      ]
+    },
+    {
+      "id": "PH-294",
+      "deck": "15-whatsapp-tlphone-rseaux",
+      "type": "phrase",
+      "fr": "T’as mon numéro ?",
+      "arab": "عَنْدَكْ النُّومْرُو تَاعِي ؟",
+      "latn": "3andek en-numéro ta3i?",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "phone"
+      ]
+    },
+    {
+      "id": "PH-295",
+      "deck": "15-whatsapp-tlphone-rseaux",
+      "type": "phrase",
+      "fr": "Je t’ai bloqué par erreur.",
+      "arab": "بْلُوكِيتَكْ بَالْغَلَطْ",
+      "latn": "blokitek b el-ghalat",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "phone"
+      ]
+    },
+    {
+      "id": "PH-296",
+      "deck": "15-whatsapp-tlphone-rseaux",
+      "type": "phrase",
+      "fr": "Éteins ton téléphone en cours.",
+      "arab": "طْفِي التِّيلِي فُونْ فِي الْكُورْ",
+      "latn": "tfi et-téléphone fi l-cours",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "ecole"
+      ]
+    },
+    {
+      "id": "PH-297",
+      "deck": "15-whatsapp-tlphone-rseaux",
+      "type": "phrase",
+      "fr": "J’ai perdu mon téléphone.",
+      "arab": "ضَيَّعْتْ التِّيلِي فُونْ تَاعِي",
+      "latn": "dayya3t et-téléphone ta3i",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "phone"
+      ]
+    },
+    {
+      "id": "PH-298",
+      "deck": "15-whatsapp-tlphone-rseaux",
+      "type": "phrase",
+      "fr": "Charge ton portable, il est à 2 %.",
+      "arab": "شَارْجِي الْبُورْتَابْلْ، رَاهْ فِي جُوجْ",
+      "latn": "charge el-portable, rah fi jouj",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "tech"
+      ]
+    },
+    {
+      "id": "PH-299",
+      "deck": "15-whatsapp-tlphone-rseaux",
+      "type": "phrase",
+      "fr": "On se voit en vocal.",
+      "arab": "نَتْلَاقَاوْ فِي فُوكَالْ",
+      "latn": "netlaqaw fi vocal",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "phone"
+      ]
+    },
+    {
+      "id": "PH-300",
+      "deck": "15-whatsapp-tlphone-rseaux",
+      "type": "phrase",
+      "fr": "J’ai vu ton statut.",
+      "arab": "شُفْتْ الْسْتَاتُو تَاعَكْ",
+      "latn": "chouft es-statut ta3ek",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "media"
+      ]
+    },
+    {
+      "id": "PH-301",
+      "deck": "15-fac-tudes-examens",
+      "type": "phrase",
+      "fr": "J’ai cours demain à huit heures.",
+      "arab": "عَنْدِي كُورْ غَدْوَة عْلَى الثْمَنْيَة",
+      "latn": "3andi cours ghodwa 3la eth-themniya",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "ecole"
+      ]
+    },
+    {
+      "id": "PH-302",
+      "deck": "15-fac-tudes-examens",
+      "type": "phrase",
+      "fr": "Le prof a annulé le cours.",
+      "arab": "الْبْرُوفْ لَغَا الْكُورْ",
+      "latn": "el-prof legha el-cours",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "ecole"
+      ]
+    },
+    {
+      "id": "PH-303",
+      "deck": "15-fac-tudes-examens",
+      "type": "phrase",
+      "fr": "On a un contrôle la semaine prochaine.",
+      "arab": "عَنْدِنَا كُونْتْرُولْ الْأُسْبُوعْ الْجَايْ",
+      "latn": "3andna contrôle el-usbou3 el-jay",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "ecole"
+      ]
+    },
+    {
+      "id": "PH-304",
+      "deck": "15-fac-tudes-examens",
+      "type": "phrase",
+      "fr": "Je n’ai pas compris le cours.",
+      "arab": "مَا فْهَمْتْشْ الْكُورْ",
+      "latn": "ma fehemtch el-cours",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "ecole"
+      ]
+    },
+    {
+      "id": "PH-305",
+      "deck": "15-fac-tudes-examens",
+      "type": "phrase",
+      "fr": "Tu peux me prêter tes notes ?",
+      "arab": "تَقْدَرْ تْسْلَفْنِي الْكْرَاسْ تَاعَكْ ؟",
+      "latn": "teqder teslefni el-krass ta3ek?",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "ecole"
+      ]
+    },
+    {
+      "id": "PH-306",
+      "deck": "15-fac-tudes-examens",
+      "type": "phrase",
+      "fr": "J’ai rendu mon devoir en retard.",
+      "arab": "سَلَّمْتْ الْدِيفْوَارْ مْتَأَخِّرْ",
+      "latn": "sellemt el-devoir mt2akhkher",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "ecole"
+      ]
+    },
+    {
+      "id": "PH-307",
+      "deck": "15-fac-tudes-examens",
+      "type": "phrase",
+      "fr": "C’est quelle amphi ?",
+      "arab": "أَنْهِي الْأَمْفِي ؟",
+      "latn": "anhi el-amphi?",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "ecole"
+      ]
+    },
+    {
+      "id": "PH-308",
+      "deck": "15-fac-tudes-examens",
+      "type": "phrase",
+      "fr": "Je vais à la bibliothèque réviser.",
+      "arab": "نْرُوحْ لِلْبِيبْلِيُو نْرَاجَعْ",
+      "latn": "nro7 lel-biblio nraja3",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "ecole"
+      ]
+    },
+    {
+      "id": "PH-309",
+      "deck": "15-fac-tudes-examens",
+      "type": "phrase",
+      "fr": "On a une présentation orale.",
+      "arab": "عَنْدِنَا بْرِيزَانْتَاسْيُونْ أُورَالْ",
+      "latn": "3andna présentation orale",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "ecole"
+      ]
+    },
+    {
+      "id": "PH-310",
+      "deck": "15-fac-tudes-examens",
+      "type": "phrase",
+      "fr": "J’ai validé le semestre.",
+      "arab": "فَالِيدِيتْ الْسِيمِيسْتْرْ",
+      "latn": "validit es-semestre",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "ecole"
+      ]
+    },
+    {
+      "id": "PH-311",
+      "deck": "15-fac-tudes-examens",
+      "type": "phrase",
+      "fr": "Je redouble cette année.",
+      "arab": "رَانِي نْعَاوَدْ الْعَامْ",
+      "latn": "rani n3awed el-3am",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "ecole"
+      ]
+    },
+    {
+      "id": "PH-312",
+      "deck": "15-fac-tudes-examens",
+      "type": "phrase",
+      "fr": "T’as choisi quelle spécialité ?",
+      "arab": "خْتَارِيتْ أَنْهِي سْبِيسْيَالِيتِي ؟",
+      "latn": "khtarit anhi spécialité?",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "ecole"
+      ]
+    },
+    {
+      "id": "PH-313",
+      "deck": "15-fac-tudes-examens",
+      "type": "phrase",
+      "fr": "Le concours est difficile.",
+      "arab": "الْكُونْكُورْ صْعِيبْ",
+      "latn": "el-concours s3ib",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "ecole"
+      ]
+    },
+    {
+      "id": "PH-314",
+      "deck": "15-fac-tudes-examens",
+      "type": "phrase",
+      "fr": "Je cherche un sujet de mémoire.",
+      "arab": "نْقَعَّدْ سُوجِي تَاعْ مِيمْوَارْ",
+      "latn": "n9a3ed sujet ta3 mémoire",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B2",
+      "tags": [
+        "ecole"
+      ]
+    },
+    {
+      "id": "PH-315",
+      "deck": "15-fac-tudes-examens",
+      "type": "phrase",
+      "fr": "On a un TD cet après-midi.",
+      "arab": "عَنْدِنَا تِي دِي الْعَشِيَّة",
+      "latn": "3andna TD el-3achiya",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "ecole"
+      ]
+    },
+    {
+      "id": "PH-316",
+      "deck": "15-fac-tudes-examens",
+      "type": "phrase",
+      "fr": "Le prof explique trop vite.",
+      "arab": "الْبْرُوفْ يْشَرَّحْ بَالزَّرْبَة",
+      "latn": "el-prof ycharre7 bezzerba",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "ecole"
+      ]
+    },
+    {
+      "id": "PH-317",
+      "deck": "15-fac-tudes-examens",
+      "type": "phrase",
+      "fr": "J’ai eu une bonne note.",
+      "arab": "جَابْتْ نُوتَة مْلِيحَة",
+      "latn": "jabt note mli7a",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "ecole"
+      ]
+    },
+    {
+      "id": "PH-318",
+      "deck": "15-fac-tudes-examens",
+      "type": "phrase",
+      "fr": "Il faut s’inscrire avant vendredi.",
+      "arab": "خَاصْ نْسَجِّلُوا قَبْلْ الْجُمْعَة",
+      "latn": "khas nsejjelou 9bal el-jem3a",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "ecole"
+      ]
+    },
+    {
+      "id": "PH-319",
+      "deck": "15-fac-tudes-examens",
+      "type": "phrase",
+      "fr": "Je suis en première année.",
+      "arab": "رَانِي فِي الْأُولَى",
+      "latn": "rani fi l-oula",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "ecole"
+      ]
+    },
+    {
+      "id": "PH-320",
+      "deck": "15-fac-tudes-examens",
+      "type": "phrase",
+      "fr": "On a un projet de groupe.",
+      "arab": "عَنْدِنَا بْرُوجِي تَاعْ غْرُوبْ",
+      "latn": "3andna projet ta3 groupe",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "ecole"
+      ]
+    },
+    {
+      "id": "PH-321",
+      "deck": "15-argent-courses-march",
+      "type": "phrase",
+      "fr": "J’ai pas assez d’argent.",
+      "arab": "مَا عَنْدِيشْ دْرَاهَمْ بَرْكَة",
+      "latn": "ma 3andich drahem berka",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "argent"
+      ]
+    },
+    {
+      "id": "PH-322",
+      "deck": "15-argent-courses-march",
+      "type": "phrase",
+      "fr": "Tu peux me prêter mille dinars ?",
+      "arab": "تَقْدَرْ تْسْلَفْنِي أَلَفْ دِينَارْ ؟",
+      "latn": "teqder teslefni alef dinar?",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "argent"
+      ]
+    },
+    {
+      "id": "PH-323",
+      "deck": "15-argent-courses-march",
+      "type": "phrase",
+      "fr": "Je te rembourse demain.",
+      "arab": "نْرَدَّكْ غَدْوَة",
+      "latn": "nreddek ghodwa",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "argent"
+      ]
+    },
+    {
+      "id": "PH-324",
+      "deck": "15-argent-courses-march",
+      "type": "phrase",
+      "fr": "C’est trop cher, baisse un peu.",
+      "arab": "غَالِي بَزَّافْ، نَقَّصْ شْوِيَّة",
+      "latn": "ghali bezzaf, nqes chwiya",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "marche"
+      ]
+    },
+    {
+      "id": "PH-325",
+      "deck": "15-argent-courses-march",
+      "type": "phrase",
+      "fr": "Je paie en cash.",
+      "arab": "نْخَلَّصْ كَاشْ",
+      "latn": "nkhelles cash",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "argent"
+      ]
+    },
+    {
+      "id": "PH-326",
+      "deck": "15-argent-courses-march",
+      "type": "phrase",
+      "fr": "Tu acceptes la carte ?",
+      "arab": "تَقْبَلْ الْكَارْتَة ؟",
+      "latn": "teqbel el-carte?",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "argent"
+      ]
+    },
+    {
+      "id": "PH-327",
+      "deck": "15-argent-courses-march",
+      "type": "phrase",
+      "fr": "Où y’a un distributeur ?",
+      "arab": "وِينْ كَايِنْ دِيسْتْرِيبُوتُورْ ؟",
+      "latn": "win kayen distributeur?",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "argent"
+      ]
+    },
+    {
+      "id": "PH-328",
+      "deck": "15-argent-courses-march",
+      "type": "phrase",
+      "fr": "Mon compte est à découvert.",
+      "arab": "الْكُومْبْتْ تَاعِي فِي الرُّوجْ",
+      "latn": "el-compte ta3i fi r-rouge",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "argent"
+      ]
+    },
+    {
+      "id": "PH-329",
+      "deck": "15-argent-courses-march",
+      "type": "phrase",
+      "fr": "J’ai reçu mon salaire.",
+      "arab": "وَصَّلْنِي الرَّاتِبْ",
+      "latn": "wasselni er-ratib",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "argent"
+      ]
+    },
+    {
+      "id": "PH-330",
+      "deck": "15-argent-courses-march",
+      "type": "phrase",
+      "fr": "Combien ça coûte au kilo ?",
+      "arab": "شْحَالْ الْكِيلُو ؟",
+      "latn": "ch7al el-kilo?",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "marche"
+      ]
+    },
+    {
+      "id": "PH-331",
+      "deck": "15-argent-courses-march",
+      "type": "phrase",
+      "fr": "Donne-moi un demi-kilo.",
+      "arab": "عْطِينِي نُصْ كِيلُو",
+      "latn": "3tini noss kilo",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "marche"
+      ]
+    },
+    {
+      "id": "PH-332",
+      "deck": "15-argent-courses-march",
+      "type": "phrase",
+      "fr": "C’est frais ?",
+      "arab": "طْرِي ؟",
+      "latn": "tri?",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "marche"
+      ]
+    },
+    {
+      "id": "PH-333",
+      "deck": "15-argent-courses-march",
+      "type": "phrase",
+      "fr": "Je cherche des soldes.",
+      "arab": "نْقَعَّدْ سُولْدْ",
+      "latn": "n9a3ed soldes",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "marche"
+      ]
+    },
+    {
+      "id": "PH-334",
+      "deck": "15-argent-courses-march",
+      "type": "phrase",
+      "fr": "La taille est trop petite.",
+      "arab": "الْطَايْ ضَيَّقَة بَزَّافْ",
+      "latn": "et-taille dayyaqa bezzaf",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "marche"
+      ]
+    },
+    {
+      "id": "PH-335",
+      "deck": "15-argent-courses-march",
+      "type": "phrase",
+      "fr": "Je peux essayer ?",
+      "arab": "نَقْدَرْ نْجَرَّبْ ؟",
+      "latn": "neqder njerreb?",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "marche"
+      ]
+    },
+    {
+      "id": "PH-336",
+      "deck": "15-argent-courses-march",
+      "type": "phrase",
+      "fr": "Y’a une réduction ?",
+      "arab": "كَايِنْ تَخْفِيضْ ؟",
+      "latn": "kayen takhfid?",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "marche"
+      ]
+    },
+    {
+      "id": "PH-337",
+      "deck": "15-argent-courses-march",
+      "type": "phrase",
+      "fr": "Je n’ai pas de monnaie.",
+      "arab": "مَا عَنْدِيشْ صَرْفْ",
+      "latn": "ma 3andich sarf",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "argent"
+      ]
+    },
+    {
+      "id": "PH-338",
+      "deck": "15-argent-courses-march",
+      "type": "phrase",
+      "fr": "Garde la monnaie.",
+      "arab": "خَلِّي الصَّرْفْ",
+      "latn": "khelli es-sarf",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "argent"
+      ]
+    },
+    {
+      "id": "PH-339",
+      "deck": "15-argent-courses-march",
+      "type": "phrase",
+      "fr": "J’ai fait un virement.",
+      "arab": "دَرْتْ فِيرْمَانْ",
+      "latn": "dart virement",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "argent"
+      ]
+    },
+    {
+      "id": "PH-340",
+      "deck": "15-argent-courses-march",
+      "type": "phrase",
+      "fr": "Les prix ont flambé.",
+      "arab": "الْأَسْعَارْ طَلْعَتْ بَزَّافْ",
+      "latn": "el-as3ar tel3et bezzaf",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "argent"
+      ]
+    },
+    {
+      "id": "PH-341",
+      "deck": "15-amis-sortie-loisirs",
+      "type": "phrase",
+      "fr": "On sort ce soir ?",
+      "arab": "نَخْرْجُوا الْعَشِيَّة ؟",
+      "latn": "nekhrejou el-3achiya?",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "id": "PH-342",
+      "deck": "15-amis-sortie-loisirs",
+      "type": "phrase",
+      "fr": "Je suis fatigué, je reste à la maison.",
+      "arab": "رَانِي عَيَّانْ، نَبْقَى فِي الدَّارْ",
+      "latn": "rani 3eyyan, nebqa fi d-dar",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "id": "PH-343",
+      "deck": "15-amis-sortie-loisirs",
+      "type": "phrase",
+      "fr": "On se retrouve devant le cinéma.",
+      "arab": "نَتْلَاقَاوْ قُدَّامْ الْسِينِيمَا",
+      "latn": "netlaqaw qoddam es-cinéma",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "id": "PH-344",
+      "deck": "15-amis-sortie-loisirs",
+      "type": "phrase",
+      "fr": "Qu’est-ce que tu proposes ?",
+      "arab": "وَاشْ تَقْتَرَحْ ؟",
+      "latn": "wesh teqtera7?",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "id": "PH-345",
+      "deck": "15-amis-sortie-loisirs",
+      "type": "phrase",
+      "fr": "Je m’ennuie.",
+      "arab": "رَانِي مْقَلَّقْ / رَانِي نْتْمَلَّلْ",
+      "latn": "rani mqelleq / rani netmellel",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "emotion"
+      ]
+    },
+    {
+      "id": "PH-346",
+      "deck": "15-amis-sortie-loisirs",
+      "type": "phrase",
+      "fr": "On joue au foot demain.",
+      "arab": "نَلْعَبُوا كُورَة غَدْوَة",
+      "latn": "nel3abou koura ghodwa",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "sport"
+      ]
+    },
+    {
+      "id": "PH-347",
+      "deck": "15-amis-sortie-loisirs",
+      "type": "phrase",
+      "fr": "Tu viens à la plage avec nous ?",
+      "arab": "تْجِي مْعَانَا لِلْبْحَرْ ؟",
+      "latn": "tdji m3ana lel-b7ar?",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "id": "PH-348",
+      "deck": "15-amis-sortie-loisirs",
+      "type": "phrase",
+      "fr": "J’ai trop aimé le film.",
+      "arab": "عَجْبَنِي الْفِيلْمْ بَزَّافْ",
+      "latn": "3ajebni el-film bezzaf",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "loisirs"
+      ]
+    },
+    {
+      "id": "PH-349",
+      "deck": "15-amis-sortie-loisirs",
+      "type": "phrase",
+      "fr": "On écoute de la musique.",
+      "arab": "نَسْمَعُوا مُوزِيكْ",
+      "latn": "nesme3ou musique",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "loisirs"
+      ]
+    },
+    {
+      "id": "PH-350",
+      "deck": "15-amis-sortie-loisirs",
+      "type": "phrase",
+      "fr": "T’es libre samedi ?",
+      "arab": "رَاكْ فَارَغْ السَّبْتْ ؟",
+      "latn": "rak faregh es-sebt?",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "id": "PH-351",
+      "deck": "15-amis-sortie-loisirs",
+      "type": "phrase",
+      "fr": "On reporte à la semaine prochaine.",
+      "arab": "نْأَجِّلُوا لِلْأُسْبُوعْ الْجَايْ",
+      "latn": "n2ejjelou lel-usbou3 el-jay",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "id": "PH-352",
+      "deck": "15-amis-sortie-loisirs",
+      "type": "phrase",
+      "fr": "Je dois rentrer tôt.",
+      "arab": "خَاصْنِي نَدْخُلْ بَكْرِي",
+      "latn": "khassni nedkhol bekri",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "id": "PH-353",
+      "deck": "15-amis-sortie-loisirs",
+      "type": "phrase",
+      "fr": "Amène tes potes.",
+      "arab": "جِيبْ الصْحَابْ تَاعَكْ",
+      "latn": "jib es-s7ab ta3ek",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "id": "PH-354",
+      "deck": "15-amis-sortie-loisirs",
+      "type": "phrase",
+      "fr": "On a passé une super soirée.",
+      "arab": "دَوَّزْنَا سْوَارِي مْلِيحَة",
+      "latn": "dewwazna soirée mli7a",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "id": "PH-355",
+      "deck": "15-amis-sortie-loisirs",
+      "type": "phrase",
+      "fr": "Je te présente mon ami.",
+      "arab": "نْعَرَّفَكْ بْصَاحْبِي",
+      "latn": "n3arrefek b sa7bi",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "id": "PH-356",
+      "deck": "15-amis-sortie-loisirs",
+      "type": "phrase",
+      "fr": "On s’est connus à la fac.",
+      "arab": "تْعَرَّفْنَا فِي الْجَامْعَة",
+      "latn": "t3arrafna fi l-jam3a",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "id": "PH-357",
+      "deck": "15-amis-sortie-loisirs",
+      "type": "phrase",
+      "fr": "Je te manque ?",
+      "arab": "تْوَحَّشْتَنِي ؟",
+      "latn": "twahachteni?",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "emotion"
+      ]
+    },
+    {
+      "id": "PH-358",
+      "deck": "15-amis-sortie-loisirs",
+      "type": "phrase",
+      "fr": "On se parle tous les jours.",
+      "arab": "نَهْدْرُوا كُلْ يُومْ",
+      "latn": "nehdrou koul youm",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "id": "PH-359",
+      "deck": "15-amis-sortie-loisirs",
+      "type": "phrase",
+      "fr": "Viens chez moi, y’a personne.",
+      "arab": "أَجِي عَنْدِي، مَاكَاشْ حَدْ",
+      "latn": "aji 3andi, makach 7ad",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "id": "PH-360",
+      "deck": "15-amis-sortie-loisirs",
+      "type": "phrase",
+      "fr": "On fait un barbecue ce weekend.",
+      "arab": "نْدِيرُوا شْوَا فِي الْوِيكْ أَنْدْ",
+      "latn": "ndirou chwa fi l-weekend",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "id": "PH-361",
+      "deck": "15-maison-famille-voisinage",
+      "type": "phrase",
+      "fr": "Maman a appelé.",
+      "arab": "يَمَّا عَيَّطَتْ",
+      "latn": "yemma 3ayyetet",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "famille"
+      ]
+    },
+    {
+      "id": "PH-362",
+      "deck": "15-maison-famille-voisinage",
+      "type": "phrase",
+      "fr": "Dis à papa que j’arrive.",
+      "arab": "قُولْ لْبَابَا رَانِي نْجِي",
+      "latn": "qol l-baba rani ndji",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "famille"
+      ]
+    },
+    {
+      "id": "PH-363",
+      "deck": "15-maison-famille-voisinage",
+      "type": "phrase",
+      "fr": "Mes frères sont à la maison.",
+      "arab": "خُوتِي رَاهُومْ فِي الدَّارْ",
+      "latn": "khouti rahom fi d-dar",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "famille"
+      ]
+    },
+    {
+      "id": "PH-364",
+      "deck": "15-maison-famille-voisinage",
+      "type": "phrase",
+      "fr": "On mange en famille ce soir.",
+      "arab": "نَاكْلُوا مْعَ الْعَايْلَة الْعَشِيَّة",
+      "latn": "naklou m3a el-3ayla el-3achiya",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "famille"
+      ]
+    },
+    {
+      "id": "PH-365",
+      "deck": "15-maison-famille-voisinage",
+      "type": "phrase",
+      "fr": "Le bébé dort.",
+      "arab": "الْبِيبِي رَاهْ نَايَسْ",
+      "latn": "el-bébé rah nayes",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "famille"
+      ]
+    },
+    {
+      "id": "PH-366",
+      "deck": "15-maison-famille-voisinage",
+      "type": "phrase",
+      "fr": "Aide-moi à ranger.",
+      "arab": "عَاوَنِّي نْرَتَّبْ",
+      "latn": "3awenni nretteb",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "maison"
+      ]
+    },
+    {
+      "id": "PH-367",
+      "deck": "15-maison-famille-voisinage",
+      "type": "phrase",
+      "fr": "Ferme la porte, s’il te plaît.",
+      "arab": "سَكَّرْ الْبَابْ، عَفَاكْ",
+      "latn": "sekker el-bab, 3afak",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "maison"
+      ]
+    },
+    {
+      "id": "PH-368",
+      "deck": "15-maison-famille-voisinage",
+      "type": "phrase",
+      "fr": "Ouvre la fenêtre, il fait chaud.",
+      "arab": "حَلْ الشَّرْجَمْ، رَاهْ الْحَرْ",
+      "latn": "7ell ech-cherjem, rah el-7arr",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "maison"
+      ]
+    },
+    {
+      "id": "PH-369",
+      "deck": "15-maison-famille-voisinage",
+      "type": "phrase",
+      "fr": "Les voisins font la fête.",
+      "arab": "الْجِيرَانْ رَاهُومْ يَعْمَلُوا حَفْلَة",
+      "latn": "el-jiran rahom ye3melou 7afla",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "logement"
+      ]
+    },
+    {
+      "id": "PH-370",
+      "deck": "15-maison-famille-voisinage",
+      "type": "phrase",
+      "fr": "J’ai oublié d’éteindre la lumière.",
+      "arab": "نَسِيتْ نَطْفِي الضَّوْ",
+      "latn": "nsit netfi ed-daw",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "maison"
+      ]
+    },
+    {
+      "id": "PH-371",
+      "deck": "15-maison-famille-voisinage",
+      "type": "phrase",
+      "fr": "La machine à laver est en panne.",
+      "arab": "الْمَاشِينَة تَاعْ الْغَسِيلْ عَطْلَانَة",
+      "latn": "el-machine ta3 el-ghsil 3atlana",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "maison"
+      ]
+    },
+    {
+      "id": "PH-372",
+      "deck": "15-maison-famille-voisinage",
+      "type": "phrase",
+      "fr": "On reçoit de la famille demain.",
+      "arab": "عَنْدِنَا ضْيُوفْ غَدْوَة",
+      "latn": "3andna dyouf ghodwa",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "famille"
+      ]
+    },
+    {
+      "id": "PH-373",
+      "deck": "15-maison-famille-voisinage",
+      "type": "phrase",
+      "fr": "Passe le salam à tout le monde.",
+      "arab": "سَلَّمْ عْلَى الْكُلْ",
+      "latn": "sellem 3la el-koul",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "famille"
+      ]
+    },
+    {
+      "id": "PH-374",
+      "deck": "15-maison-famille-voisinage",
+      "type": "phrase",
+      "fr": "Mon oncle vient de France.",
+      "arab": "عَمِّي جَا مَنْ فْرَانْسَا",
+      "latn": "3ammi ja men Fransa",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "famille"
+      ]
+    },
+    {
+      "id": "PH-375",
+      "deck": "15-maison-famille-voisinage",
+      "type": "phrase",
+      "fr": "On va chez la grand-mère.",
+      "arab": "نْرُوحُوا عَنْدْ الْجَدَّة",
+      "latn": "nrou7ou 3and el-jedda",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "famille"
+      ]
+    },
+    {
+      "id": "PH-376",
+      "deck": "15-maison-famille-voisinage",
+      "type": "phrase",
+      "fr": "Range ta chambre.",
+      "arab": "رَتَّبْ الْبِيتْ تَاعَكْ",
+      "latn": "retteb el-bit ta3ek",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "maison"
+      ]
+    },
+    {
+      "id": "PH-377",
+      "deck": "15-maison-famille-voisinage",
+      "type": "phrase",
+      "fr": "Y’a plus de gaz.",
+      "arab": "مَاكَاشْ غَازْ",
+      "latn": "makach gaz",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "maison"
+      ]
+    },
+    {
+      "id": "PH-378",
+      "deck": "15-maison-famille-voisinage",
+      "type": "phrase",
+      "fr": "J’ai acheté des courses.",
+      "arab": "شْرِيتْ الْحَاجَاتْ تَاعْ الدَّارْ",
+      "latn": "chrit el-7ajat ta3 ed-dar",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "maison"
+      ]
+    },
+    {
+      "id": "PH-379",
+      "deck": "15-maison-famille-voisinage",
+      "type": "phrase",
+      "fr": "Le chat est sorti.",
+      "arab": "الْقَطْ خْرَجْ",
+      "latn": "el-qett khrej",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "maison"
+      ]
+    },
+    {
+      "id": "PH-380",
+      "deck": "15-maison-famille-voisinage",
+      "type": "phrase",
+      "fr": "On change les draps aujourd’hui.",
+      "arab": "نْبَدِّلُوا الْغْطَا الْيُومْ",
+      "latn": "nbeddelou el-ghta el-youm",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "maison"
+      ]
+    },
+    {
+      "id": "PH-381",
+      "deck": "15-sant-bien-tre",
+      "type": "phrase",
+      "fr": "J’ai mal au ventre.",
+      "arab": "عَنْدِي وَجَعْ فِي الْكِرْشْ",
+      "latn": "3andi wja3 fi l-kerch",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "sante"
+      ]
+    },
+    {
+      "id": "PH-382",
+      "deck": "15-sant-bien-tre",
+      "type": "phrase",
+      "fr": "Je tousse depuis trois jours.",
+      "arab": "رَانِي نَكُحْ مَنْ ثَلَاثَة أَيَّامْ",
+      "latn": "rani nekoh men tlata ayyam",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "sante"
+      ]
+    },
+    {
+      "id": "PH-383",
+      "deck": "15-sant-bien-tre",
+      "type": "phrase",
+      "fr": "Prends un cachet.",
+      "arab": "خُودْ كَاشِي",
+      "latn": "khod cachet",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "sante"
+      ]
+    },
+    {
+      "id": "PH-384",
+      "deck": "15-sant-bien-tre",
+      "type": "phrase",
+      "fr": "Je dois aller chez le dentiste.",
+      "arab": "خَاصْنِي نْرُوحْ لِلدَّانْتِيسْتْ",
+      "latn": "khassni nro7 led-dentiste",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "sante"
+      ]
+    },
+    {
+      "id": "PH-385",
+      "deck": "15-sant-bien-tre",
+      "type": "phrase",
+      "fr": "J’ai de la fièvre.",
+      "arab": "عَنْدِي سْخَانَة",
+      "latn": "3andi skhana",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "sante"
+      ]
+    },
+    {
+      "id": "PH-386",
+      "deck": "15-sant-bien-tre",
+      "type": "phrase",
+      "fr": "Repose-toi bien.",
+      "arab": "ارْتَاحْ مْلِيحْ",
+      "latn": "erte7 mli7",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "sante"
+      ]
+    },
+    {
+      "id": "PH-387",
+      "deck": "15-sant-bien-tre",
+      "type": "phrase",
+      "fr": "Je dors mal ces derniers temps.",
+      "arab": "مَا نَرْقُدْشْ مْلِيحْ هَادْ الْأَيَّامْ",
+      "latn": "ma nerqedch mli7 had el-ayyam",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "sante"
+      ]
+    },
+    {
+      "id": "PH-388",
+      "deck": "15-sant-bien-tre",
+      "type": "phrase",
+      "fr": "Je fais du sport pour me sentir mieux.",
+      "arab": "نَلْعَبْ سْبُورْ بَاشْ نَحَسْ مْلِيحْ",
+      "latn": "nel3eb sport bach ne7ess mli7",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "sport"
+      ]
+    },
+    {
+      "id": "PH-389",
+      "deck": "15-sant-bien-tre",
+      "type": "phrase",
+      "fr": "J’ai besoin de vacances.",
+      "arab": "خَاصْنِي كُونْجِي",
+      "latn": "khassni congé",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "sante"
+      ]
+    },
+    {
+      "id": "PH-390",
+      "deck": "15-sant-bien-tre",
+      "type": "phrase",
+      "fr": "Ça me stresse trop.",
+      "arab": "هَادَا يْقَلَّقْنِي بَزَّافْ",
+      "latn": "hada yqelleqni bezzaf",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "emotion"
+      ]
+    },
+    {
+      "id": "PH-391",
+      "deck": "15-sant-bien-tre",
+      "type": "phrase",
+      "fr": "Bois beaucoup d’eau.",
+      "arab": "اشْرَبْ مَا بَزَّافْ",
+      "latn": "echreb ma bezzaf",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "sante"
+      ]
+    },
+    {
+      "id": "PH-392",
+      "deck": "15-sant-bien-tre",
+      "type": "phrase",
+      "fr": "Je suis allergique à la poussière.",
+      "arab": "عَنْدِي أَلِرْجِي مَنْ الْغْبَارْ",
+      "latn": "3andi allergie men el-ghbar",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "sante"
+      ]
+    },
+    {
+      "id": "PH-393",
+      "deck": "15-sant-bien-tre",
+      "type": "phrase",
+      "fr": "La pharmacie est ouverte ?",
+      "arab": "الصَّيْدَلِيَّة مَحْلُولَة ؟",
+      "latn": "es-saydaliya me7loula?",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "sante"
+      ]
+    },
+    {
+      "id": "PH-394",
+      "deck": "15-sant-bien-tre",
+      "type": "phrase",
+      "fr": "J’ai une ordonnance.",
+      "arab": "عَنْدِي أُورْدُونَانْسْ",
+      "latn": "3andi ordonnance",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "sante"
+      ]
+    },
+    {
+      "id": "PH-395",
+      "deck": "15-sant-bien-tre",
+      "type": "phrase",
+      "fr": "Je me sens mieux après la sieste.",
+      "arab": "رَانِي مْلِيحْ بَعْدْ الْقَيْلُولَة",
+      "latn": "rani mli7 ba3d el-qayloula",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "sante"
+      ]
+    },
+    {
+      "id": "PH-396",
+      "deck": "15-travail-bureau",
+      "type": "phrase",
+      "fr": "Je suis en retard au boulot.",
+      "arab": "رَانِي مْتَأَخِّرْ لِلْخِدْمَة",
+      "latn": "rani mt2akhkher lel-khedma",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "travail"
+      ]
+    },
+    {
+      "id": "PH-397",
+      "deck": "15-travail-bureau",
+      "type": "phrase",
+      "fr": "Envoie-moi le fichier par mail.",
+      "arab": "صِيفْطْلِي الْفِيشْيِي بَالْمِيلْ",
+      "latn": "siftli el-fichier b el-mail",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "travail"
+      ]
+    },
+    {
+      "id": "PH-398",
+      "deck": "15-travail-bureau",
+      "type": "phrase",
+      "fr": "On a une deadline demain.",
+      "arab": "عَنْدِنَا دِيدْلَايْنْ غَدْوَة",
+      "latn": "3andna deadline ghodwa",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "travail"
+      ]
+    },
+    {
+      "id": "PH-399",
+      "deck": "15-travail-bureau",
+      "type": "phrase",
+      "fr": "Le patron est de mauvaise humeur.",
+      "arab": "الْبَاطْرُونْ رَاهْ زَعْلَانْ",
+      "latn": "el-patron rah z3lan",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "travail"
+      ]
+    },
+    {
+      "id": "PH-400",
+      "deck": "15-travail-bureau",
+      "type": "phrase",
+      "fr": "Je teletravaille aujourd’hui.",
+      "arab": "رَانِي نَخْدَمْ مَنْ الدَّارْ الْيُومْ",
+      "latn": "rani nekhedem men ed-dar el-youm",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "travail"
+      ]
+    },
+    {
+      "id": "PH-401",
+      "deck": "15-travail-bureau",
+      "type": "phrase",
+      "fr": "On a une réunion Zoom à 10 h.",
+      "arab": "عَنْدِنَا رِيُونْ زُومْ عْلَى الْعَشْرَة",
+      "latn": "3andna réunion Zoom 3la el-3achra",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "travail"
+      ]
+    },
+    {
+      "id": "PH-402",
+      "deck": "15-travail-bureau",
+      "type": "phrase",
+      "fr": "J’ai fini le rapport.",
+      "arab": "كَمَّلْتْ الرَّابُورْ",
+      "latn": "kemmelt er-rapport",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "travail"
+      ]
+    },
+    {
+      "id": "PH-403",
+      "deck": "15-travail-bureau",
+      "type": "phrase",
+      "fr": "Peux-tu vérifier ça ?",
+      "arab": "تَقْدَرْ تْشُوفْ هَادَا ؟",
+      "latn": "teqder tchouf hada?",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "travail"
+      ]
+    },
+    {
+      "id": "PH-404",
+      "deck": "15-travail-bureau",
+      "type": "phrase",
+      "fr": "C’est urgent.",
+      "arab": "هَادَا مُسْتَعْجَلْ",
+      "latn": "hada moust3jel",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "travail"
+      ]
+    },
+    {
+      "id": "PH-405",
+      "deck": "15-travail-bureau",
+      "type": "phrase",
+      "fr": "Je prends ma pause.",
+      "arab": "نَاخُدْ الْبُوزْ تَاعِي",
+      "latn": "nakhod el-pause ta3i",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "travail"
+      ]
+    },
+    {
+      "id": "PH-406",
+      "deck": "15-travail-bureau",
+      "type": "phrase",
+      "fr": "On recrute quelqu’un.",
+      "arab": "رَاهُومْ يْوَظَّفُوا وَاحَدْ",
+      "latn": "rahom ywazzafou wa7ed",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "travail"
+      ]
+    },
+    {
+      "id": "PH-407",
+      "deck": "15-travail-bureau",
+      "type": "phrase",
+      "fr": "J’ai un entretien en ligne.",
+      "arab": "عَنْدِي كُولُونْ أُونْلَايْنْ",
+      "latn": "3andi colloque online",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "travail"
+      ]
+    },
+    {
+      "id": "PH-408",
+      "deck": "15-travail-bureau",
+      "type": "phrase",
+      "fr": "Le contrat est pour un an.",
+      "arab": "الْكُونْطْرَا تَاعْ عَامْ",
+      "latn": "el-contrat ta3 3am",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "travail"
+      ]
+    },
+    {
+      "id": "PH-409",
+      "deck": "15-travail-bureau",
+      "type": "phrase",
+      "fr": "Je demande une augmentation.",
+      "arab": "نَطْلَبْ زِيَادَة فِي الرَّاتِبْ",
+      "latn": "netlob ziyada fi r-ratib",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B2",
+      "tags": [
+        "travail"
+      ]
+    },
+    {
+      "id": "PH-410",
+      "deck": "15-travail-bureau",
+      "type": "phrase",
+      "fr": "On est en sous-effectif.",
+      "arab": "رَانَا نَاقْصِينْ نَاسْ",
+      "latn": "rana naqsin nas",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B2",
+      "tags": [
+        "travail"
+      ]
+    },
+    {
+      "id": "PH-411",
+      "deck": "15-transport-ville",
+      "type": "phrase",
+      "fr": "Le bus est plein.",
+      "arab": "الْبَاسْ مَعْمَرْ",
+      "latn": "el-bus m3ammer",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "transport"
+      ]
+    },
+    {
+      "id": "PH-412",
+      "deck": "15-transport-ville",
+      "type": "phrase",
+      "fr": "Descends à l’arrêt suivant.",
+      "arab": "انْزَلْ فِي الْوُقْفَة الْجَايَّة",
+      "latn": "enzel fi l-woqfa el-jayya",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "transport"
+      ]
+    },
+    {
+      "id": "PH-413",
+      "deck": "15-transport-ville",
+      "type": "phrase",
+      "fr": "Combien pour aller à Bab Ezzouar ?",
+      "arab": "شْحَالْ بَاشْ نْرُوحْ لْبَابْ الزَّوَارْ ؟",
+      "latn": "ch7al bach nro7 l-Bab Ezzouar?",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "transport"
+      ]
+    },
+    {
+      "id": "PH-414",
+      "deck": "15-transport-ville",
+      "type": "phrase",
+      "fr": "Le métro est plus rapide.",
+      "arab": "الْمِيتْرُو أَسْرَعْ",
+      "latn": "el-métro asra3",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "transport"
+      ]
+    },
+    {
+      "id": "PH-415",
+      "deck": "15-transport-ville",
+      "type": "phrase",
+      "fr": "Y’a des embouteillages.",
+      "arab": "رَاهْ الْحَبْسْ",
+      "latn": "rah el-7abs",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "transport"
+      ]
+    },
+    {
+      "id": "PH-416",
+      "deck": "15-transport-ville",
+      "type": "phrase",
+      "fr": "Je prends un Uber.",
+      "arab": "نَاخُدْ أُوبَرْ",
+      "latn": "nakhod Uber",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "transport"
+      ]
+    },
+    {
+      "id": "PH-417",
+      "deck": "15-transport-ville",
+      "type": "phrase",
+      "fr": "Où est le parking ?",
+      "arab": "وِينْ كَايِنْ الْبَارْكِينْ ؟",
+      "latn": "win kayen el-parking?",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "transport"
+      ]
+    },
+    {
+      "id": "PH-418",
+      "deck": "15-transport-ville",
+      "type": "phrase",
+      "fr": "L’essence a encore augmenté.",
+      "arab": "الْأَصَانْسْ زَادَتْ مَرَّة أُخْرَى",
+      "latn": "el-essence zadet marra okhra",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "transport"
+      ]
+    },
+    {
+      "id": "PH-419",
+      "deck": "15-transport-ville",
+      "type": "phrase",
+      "fr": "Ma voiture est au garage.",
+      "arab": "الطُّومُوبِيلْ تَاعِي فِي الْغَارَاجْ",
+      "latn": "et-tomobil ta3i fi l-garage",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "transport"
+      ]
+    },
+    {
+      "id": "PH-420",
+      "deck": "15-transport-ville",
+      "type": "phrase",
+      "fr": "Tourne à droite après le feu.",
+      "arab": "دُورْ لِيمَنْ بَعْدْ الضَّوْ",
+      "latn": "dour limen ba3d ed-daw",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "ville"
+      ]
+    },
+    {
+      "id": "PH-421",
+      "deck": "15-transport-ville",
+      "type": "phrase",
+      "fr": "C’est tout droit jusqu’au rond-point.",
+      "arab": "نِيشَانْ حَتَّى لِلرُّونْدْ بْوَانْ",
+      "latn": "nichan 7etta ler-rond-point",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "ville"
+      ]
+    },
+    {
+      "id": "PH-422",
+      "deck": "15-transport-ville",
+      "type": "phrase",
+      "fr": "Je suis coincé dans le trafic.",
+      "arab": "رَانِي مَحْبُوسْ فِي الْحَبْسْ",
+      "latn": "rani me7bous fi l-7abs",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "transport"
+      ]
+    },
+    {
+      "id": "PH-423",
+      "deck": "15-transport-ville",
+      "type": "phrase",
+      "fr": "Le taxi refuse le compteur.",
+      "arab": "الطَّاكْسِي مَا يَبْغِيشْ الْكُومْبْتُورْ",
+      "latn": "et-taxi ma yebghich el-compteur",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "transport"
+      ]
+    },
+    {
+      "id": "PH-424",
+      "deck": "15-transport-ville",
+      "type": "phrase",
+      "fr": "Y’a une grève des transports.",
+      "arab": "رَاهْ إِضْرَابْ تَاعْ النَّقْلْ",
+      "latn": "rah idrab ta3 en-naql",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "transport"
+      ]
+    },
+    {
+      "id": "PH-425",
+      "deck": "15-transport-ville",
+      "type": "phrase",
+      "fr": "On marche, c’est pas loin.",
+      "arab": "نَمْشِيوْ، مَاهُوشْ بْعِيدْ",
+      "latn": "nemchiou, mahouch b3id",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "ville"
+      ]
+    },
+    {
+      "id": "PH-426",
+      "deck": "15-mto-saisons",
+      "type": "phrase",
+      "fr": "Il fait très chaud aujourd’hui.",
+      "arab": "رَاهْ الْحَرْ بَزَّافْ الْيُومْ",
+      "latn": "rah el-7arr bezzaf el-youm",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "meteo"
+      ]
+    },
+    {
+      "id": "PH-427",
+      "deck": "15-mto-saisons",
+      "type": "phrase",
+      "fr": "Il y a du vent.",
+      "arab": "رَاهْ الرِّيحْ",
+      "latn": "rah er-ri7",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "meteo"
+      ]
+    },
+    {
+      "id": "PH-428",
+      "deck": "15-mto-saisons",
+      "type": "phrase",
+      "fr": "Il neige dans les montagnes.",
+      "arab": "رَاهِي تْثَلَّجْ فِي الْجْبَالْ",
+      "latn": "rahi tethellej fi l-jbal",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "meteo"
+      ]
+    },
+    {
+      "id": "PH-429",
+      "deck": "15-mto-saisons",
+      "type": "phrase",
+      "fr": "Prends un parapluie.",
+      "arab": "خُودْ شَمْسِيَّة",
+      "latn": "khod chemciya",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "meteo"
+      ]
+    },
+    {
+      "id": "PH-430",
+      "deck": "15-mto-saisons",
+      "type": "phrase",
+      "fr": "L’hiver est rude cette année.",
+      "arab": "الشَّتْوَة قَاسْيَة هَادْ الْعَامْ",
+      "latn": "ech-chetwa qasya had el-3am",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "meteo"
+      ]
+    },
+    {
+      "id": "PH-431",
+      "deck": "15-mto-saisons",
+      "type": "phrase",
+      "fr": "Au printemps c’est beau.",
+      "arab": "فِي الرَّبِيعْ رَاهْ مْلِيحْ",
+      "latn": "fi r-rabi3 rah mli7",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "meteo"
+      ]
+    },
+    {
+      "id": "PH-432",
+      "deck": "15-mto-saisons",
+      "type": "phrase",
+      "fr": "L’été on va à la mer.",
+      "arab": "فِي الصَّيْفْ نْرُوحُوا لِلْبْحَرْ",
+      "latn": "fi s-sif nrou7ou lel-b7ar",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "meteo"
+      ]
+    },
+    {
+      "id": "PH-433",
+      "deck": "15-mto-saisons",
+      "type": "phrase",
+      "fr": "Y’a un orage ce soir.",
+      "arab": "رَاهْ الرَّعْدْ الْعَشِيَّة",
+      "latn": "rah er-ra3d el-3achiya",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "meteo"
+      ]
+    },
+    {
+      "id": "PH-434",
+      "deck": "15-mto-saisons",
+      "type": "phrase",
+      "fr": "Il fait frais le matin.",
+      "arab": "رَاهْ الْبَرْدْ فِي الصَّبَاحْ",
+      "latn": "rah el-berd fi s-sba7",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "meteo"
+      ]
+    },
+    {
+      "id": "PH-435",
+      "deck": "15-mto-saisons",
+      "type": "phrase",
+      "fr": "Le temps est couvert.",
+      "arab": "الْجَوْ مْغَيَّمْ",
+      "latn": "el-jou mghayyem",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "meteo"
+      ]
+    },
+    {
+      "id": "PH-436",
+      "deck": "15-motions-relations",
+      "type": "phrase",
+      "fr": "Je suis vraiment content pour toi.",
+      "arab": "رَانِي فَرْحَانْ بَزَّافْ عْلِيكْ",
+      "latn": "rani fer7an bezzaf 3lik",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "emotion"
+      ]
+    },
+    {
+      "id": "PH-437",
+      "deck": "15-motions-relations",
+      "type": "phrase",
+      "fr": "Ça m’a fait de la peine.",
+      "arab": "هَادَا قَهَّرْنِي",
+      "latn": "hada qehherni",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "emotion"
+      ]
+    },
+    {
+      "id": "PH-438",
+      "deck": "15-motions-relations",
+      "type": "phrase",
+      "fr": "Je suis déçu de toi.",
+      "arab": "رَانِي مْدَبُّو مَنَّكْ",
+      "latn": "rani mdebbou mennek",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "emotion"
+      ]
+    },
+    {
+      "id": "PH-439",
+      "deck": "15-motions-relations",
+      "type": "phrase",
+      "fr": "Ne sois pas triste.",
+      "arab": "مَا تْحْزَنْشْ",
+      "latn": "ma te7zench",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "emotion"
+      ]
+    },
+    {
+      "id": "PH-440",
+      "deck": "15-motions-relations",
+      "type": "phrase",
+      "fr": "Je t’apprécie beaucoup.",
+      "arab": "نَقَدَّرَكْ بَزَّافْ",
+      "latn": "nqadderek bezzaf",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "emotion"
+      ]
+    },
+    {
+      "id": "PH-441",
+      "deck": "15-motions-relations",
+      "type": "phrase",
+      "fr": "On a besoin de parler.",
+      "arab": "خَاصْنَا نَهْدْرُوا",
+      "latn": "khassna nehdrou",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "relation"
+      ]
+    },
+    {
+      "id": "PH-442",
+      "deck": "15-motions-relations",
+      "type": "phrase",
+      "fr": "Je te fais confiance.",
+      "arab": "نْثِقْ فِيكْ",
+      "latn": "nthiq fik",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "relation"
+      ]
+    },
+    {
+      "id": "PH-443",
+      "deck": "15-motions-relations",
+      "type": "phrase",
+      "fr": "Tu m’as blessé.",
+      "arab": "جْرَحْتَنِي",
+      "latn": "jra7teni",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "emotion"
+      ]
+    },
+    {
+      "id": "PH-444",
+      "deck": "15-motions-relations",
+      "type": "phrase",
+      "fr": "Oublions ça.",
+      "arab": "نَنْسَاوْ هَادَا",
+      "latn": "nensaw hada",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "relation"
+      ]
+    },
+    {
+      "id": "PH-445",
+      "deck": "15-motions-relations",
+      "type": "phrase",
+      "fr": "Je suis fier de toi.",
+      "arab": "رَانِي فَاخَرْ بِيكْ",
+      "latn": "rani fakher bik",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "emotion"
+      ]
+    },
+    {
+      "id": "PH-446",
+      "deck": "15-motions-relations",
+      "type": "phrase",
+      "fr": "T’inquiète pas pour moi.",
+      "arab": "مَا تَقْلَقْشْ عْلِيَّا",
+      "latn": "ma teqleqch 3liya",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "emotion"
+      ]
+    },
+    {
+      "id": "PH-447",
+      "deck": "15-motions-relations",
+      "type": "phrase",
+      "fr": "Je me sens seul.",
+      "arab": "رَانِي نَحَسْ بْرُوحِي وَحْدِي",
+      "latn": "rani ne7ess b rou7i we7di",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "emotion"
+      ]
+    },
+    {
+      "id": "PH-448",
+      "deck": "15-motions-relations",
+      "type": "phrase",
+      "fr": "Merci d’être là.",
+      "arab": "صَحَّة عْلَى كِي رَاكْ هْنَا",
+      "latn": "sahha 3la ki rak hna",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "emotion"
+      ]
+    },
+    {
+      "id": "PH-449",
+      "deck": "15-motions-relations",
+      "type": "phrase",
+      "fr": "Je n’en peux plus.",
+      "arab": "مَا بْقَاشْ نَقْدَرْ",
+      "latn": "ma bqach neqder",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "emotion"
+      ]
+    },
+    {
+      "id": "PH-450",
+      "deck": "15-motions-relations",
+      "type": "phrase",
+      "fr": "On se soutient.",
+      "arab": "نَعَاوْنُوا بَعْضْنَا",
+      "latn": "n3awnou ba3dna",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "relation"
+      ]
+    },
+    {
+      "id": "PH-451",
+      "deck": "15-opinions-oral-b2",
+      "type": "phrase",
+      "fr": "Franchement, je trouve ça bizarre.",
+      "arab": "بَالصَّرَاحَة، نَلْقَاهَا غْرِيبَة",
+      "latn": "b es-sara7a, nelqaha ghriba",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "debat"
+      ]
+    },
+    {
+      "id": "PH-452",
+      "deck": "15-opinions-oral-b2",
+      "type": "phrase",
+      "fr": "Ce n’est pas si simple.",
+      "arab": "مَاهِيشْ سَاهْلَة هَكَّا",
+      "latn": "mahich sahla hakka",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "debat"
+      ]
+    },
+    {
+      "id": "PH-453",
+      "deck": "15-opinions-oral-b2",
+      "type": "phrase",
+      "fr": "Il y a du pour et du contre.",
+      "arab": "كَايِنْ الْإِيجَابِي وْ السَّلْبِي",
+      "latn": "kayen el-ijabi w es-selbi",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B2",
+      "tags": [
+        "debat"
+      ]
+    },
+    {
+      "id": "PH-454",
+      "deck": "15-opinions-oral-b2",
+      "type": "phrase",
+      "fr": "On devrait en parler calmement.",
+      "arab": "خَاصْنَا نَهْدْرُوا بَهْدُوءْ",
+      "latn": "khassna nehdrou b hodou2",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B2",
+      "tags": [
+        "debat"
+      ]
+    },
+    {
+      "id": "PH-455",
+      "deck": "15-opinions-oral-b2",
+      "type": "phrase",
+      "fr": "Je change d’avis.",
+      "arab": "بَدَّلْتْ رَأْيِي",
+      "latn": "beddelt ra2yi",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "debat"
+      ]
+    },
+    {
+      "id": "PH-456",
+      "deck": "15-opinions-oral-b2",
+      "type": "phrase",
+      "fr": "C’est une exagération.",
+      "arab": "هَادَا مُبَالَغَة",
+      "latn": "hada mubalagha",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B2",
+      "tags": [
+        "debat"
+      ]
+    },
+    {
+      "id": "PH-457",
+      "deck": "15-opinions-oral-b2",
+      "type": "phrase",
+      "fr": "Tu m’as convaincu.",
+      "arab": "قَنَعْتَنِي",
+      "latn": "qna3teni",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "debat"
+      ]
+    },
+    {
+      "id": "PH-458",
+      "deck": "15-opinions-oral-b2",
+      "type": "phrase",
+      "fr": "Restons réalistes.",
+      "arab": "نَبْقَاوْ وَاقْعِيِّينْ",
+      "latn": "nebqaw waq3iyyin",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B2",
+      "tags": [
+        "debat"
+      ]
+    },
+    {
+      "id": "PH-459",
+      "deck": "15-opinions-oral-b2",
+      "type": "phrase",
+      "fr": "Dans la pratique, c’est autre chose.",
+      "arab": "فِي الْوَاقِعْ، حَاجَة أُخْرَى",
+      "latn": "fi l-waqi3, 7aja okhra",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B2",
+      "tags": [
+        "debat"
+      ]
+    },
+    {
+      "id": "PH-460",
+      "deck": "15-opinions-oral-b2",
+      "type": "phrase",
+      "fr": "On verra avec le temps.",
+      "arab": "نْشُوفُوا مْعَ الْوَقْتْ",
+      "latn": "nchoufou m3a el-waqt",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "debat"
+      ]
+    },
+    {
+      "id": "PH-461",
+      "deck": "15-tech-internet-admin-digital",
+      "type": "phrase",
+      "fr": "Mon PC a planté.",
+      "arab": "الْبِي سِي تَاعِي تْهَبَّطْ",
+      "latn": "el-PC ta3i thebbet",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "tech"
+      ]
+    },
+    {
+      "id": "PH-462",
+      "deck": "15-tech-internet-admin-digital",
+      "type": "phrase",
+      "fr": "Réinstalle l’appli.",
+      "arab": "عَاوَدْ ثَبَّتْ الْأَبْلِيكَاسْيُونْ",
+      "latn": "3awed thebbet el-application",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "tech"
+      ]
+    },
+    {
+      "id": "PH-463",
+      "deck": "15-tech-internet-admin-digital",
+      "type": "phrase",
+      "fr": "J’ai oublié mon mot de passe.",
+      "arab": "نَسِيتْ الْمُوتْ دِي بَاسْ",
+      "latn": "nsit el-mot de passe",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "tech"
+      ]
+    },
+    {
+      "id": "PH-464",
+      "deck": "15-tech-internet-admin-digital",
+      "type": "phrase",
+      "fr": "Crée un compte.",
+      "arab": "دِيرْ كُومْبْتْ",
+      "latn": "dir compte",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "tech"
+      ]
+    },
+    {
+      "id": "PH-465",
+      "deck": "15-tech-internet-admin-digital",
+      "type": "phrase",
+      "fr": "Télécharge le PDF.",
+      "arab": "تِيلِيشَارْجِي الْبِي دِي أَفْ",
+      "latn": "télécharge el-PDF",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "tech"
+      ]
+    },
+    {
+      "id": "PH-466",
+      "deck": "15-tech-internet-admin-digital",
+      "type": "phrase",
+      "fr": "Le site est en maintenance.",
+      "arab": "الْسِيتْ رَاهْ فِي مَانْتْنَانْسْ",
+      "latn": "es-site rah fi maintenance",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "tech"
+      ]
+    },
+    {
+      "id": "PH-467",
+      "deck": "15-tech-internet-admin-digital",
+      "type": "phrase",
+      "fr": "Active le Bluetooth.",
+      "arab": "شَعَّلْ الْبْلُوتُوثْ",
+      "latn": "cha33el el-Bluetooth",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "tech"
+      ]
+    },
+    {
+      "id": "PH-468",
+      "deck": "15-tech-internet-admin-digital",
+      "type": "phrase",
+      "fr": "J’ai perdu mes données.",
+      "arab": "ضَيَّعْتْ الْدُونِيَاتْ",
+      "latn": "dayya3t el-données",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "tech"
+      ]
+    },
+    {
+      "id": "PH-469",
+      "deck": "15-tech-internet-admin-digital",
+      "type": "phrase",
+      "fr": "Fais une capture d’écran.",
+      "arab": "دِيرْ كَابْتُورْ دِي أِكْرَانْ",
+      "latn": "dir capture d’écran",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "tech"
+      ]
+    },
+    {
+      "id": "PH-470",
+      "deck": "15-tech-internet-admin-digital",
+      "type": "phrase",
+      "fr": "Mets à jour ton téléphone.",
+      "arab": "دِيرْ مِيزْ أَا جُورْ لِلتِّيلِي فُونْ",
+      "latn": "dir mise à jour lel-téléphone",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "tech"
+      ]
+    },
+    {
+      "id": "PH-471",
+      "deck": "15-situations-urgentes-politesse-forte",
+      "type": "phrase",
+      "fr": "Au secours !",
+      "arab": "النْجْدَة !",
+      "latn": "en-nejda!",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "urgence"
+      ]
+    },
+    {
+      "id": "PH-472",
+      "deck": "15-situations-urgentes-politesse-forte",
+      "type": "phrase",
+      "fr": "Appelez la police.",
+      "arab": "عَيَّطُوا لِلْبُولِيسْ",
+      "latn": "3ayyetou lel-police",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "urgence"
+      ]
+    },
+    {
+      "id": "PH-473",
+      "deck": "15-situations-urgentes-politesse-forte",
+      "type": "phrase",
+      "fr": "J’ai perdu mon portefeuille.",
+      "arab": "ضَيَّعْتْ الْبُورْتْفُويْ تَاعِي",
+      "latn": "dayya3t el-portefeuille ta3i",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "urgence"
+      ]
+    },
+    {
+      "id": "PH-474",
+      "deck": "15-situations-urgentes-politesse-forte",
+      "type": "phrase",
+      "fr": "Quelqu’un a volé mon téléphone.",
+      "arab": "وَاحَدْ سْرَقْلِي التِّيلِي فُونْ",
+      "latn": "wa7ed sraqli et-téléphone",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "urgence"
+      ]
+    },
+    {
+      "id": "PH-475",
+      "deck": "15-situations-urgentes-politesse-forte",
+      "type": "phrase",
+      "fr": "Où est l’hôpital le plus proche ?",
+      "arab": "وِينْ أَقْرَبْ سْبِيطَارْ ؟",
+      "latn": "win aqreb sbitar?",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "urgence"
+      ]
+    },
+    {
+      "id": "PH-476",
+      "deck": "15-situations-urgentes-politesse-forte",
+      "type": "phrase",
+      "fr": "Excusez-moi du dérangement.",
+      "arab": "سْمَحْلِي عْلَى الْإِزْعَاجْ",
+      "latn": "sma7li 3la el-iz3aj",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "politesse"
+      ]
+    },
+    {
+      "id": "PH-477",
+      "deck": "15-situations-urgentes-politesse-forte",
+      "type": "phrase",
+      "fr": "Je vous remercie beaucoup.",
+      "arab": "نَشْكُرَكُومْ بَزَّافْ",
+      "latn": "nechkourekoum bezzaf",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "politesse"
+      ]
+    },
+    {
+      "id": "PH-478",
+      "deck": "15-situations-urgentes-politesse-forte",
+      "type": "phrase",
+      "fr": "Avec plaisir.",
+      "arab": "بَالْفَرْحَة / عْلَى الرَّاسْ وَالْعِينْ",
+      "latn": "b el-far7a / 3la er-ras w el-3in",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "politesse"
+      ]
+    },
+    {
+      "id": "PH-479",
+      "deck": "15-situations-urgentes-politesse-forte",
+      "type": "phrase",
+      "fr": "Que Dieu te protège.",
+      "arab": "اللَّهْ يَحْفَظَكْ",
+      "latn": "llah ye7fedek",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "foi"
+      ]
+    },
+    {
+      "id": "PH-480",
+      "deck": "15-situations-urgentes-politesse-forte",
+      "type": "phrase",
+      "fr": "Bonne chance pour demain.",
+      "arab": "بَالْتَّوْفِيقْ لِغَدْوَة",
+      "latn": "b et-tawfiq l-ghodwa",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "politesse"
+      ]
+    },
+    {
+      "id": "PH-481",
+      "deck": "15-voyages-vacances",
+      "type": "phrase",
+      "fr": "On part en vacances la semaine prochaine.",
+      "arab": "نْسَافْرُوا فِي الْكُونْجِي الْأُسْبُوعْ الْجَايْ",
+      "latn": "nsafrou fi l-congé el-usbou3 el-jay",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "voyage"
+      ]
+    },
+    {
+      "id": "PH-482",
+      "deck": "15-voyages-vacances",
+      "type": "phrase",
+      "fr": "J’ai réservé mon billet d’avion.",
+      "arab": "دَرْتْ رِزِيرْفَاسْيُونْ تَاعْ الْبِيَّة",
+      "latn": "dart réservation ta3 el-billet",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "voyage"
+      ]
+    },
+    {
+      "id": "PH-483",
+      "deck": "15-voyages-vacances",
+      "type": "phrase",
+      "fr": "Combien de nuits tu restes ?",
+      "arab": "شْحَالْ لِيلَة تَبْقَى ؟",
+      "latn": "ch7al lila tebqa?",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "voyage"
+      ]
+    },
+    {
+      "id": "PH-484",
+      "deck": "15-voyages-vacances",
+      "type": "phrase",
+      "fr": "Y’a le petit-déjeuner inclus ?",
+      "arab": "كَايِنْ الْبْتِي دِي جُونِي ؟",
+      "latn": "kayen el-petit-déj?",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "voyage"
+      ]
+    },
+    {
+      "id": "PH-485",
+      "deck": "15-voyages-vacances",
+      "type": "phrase",
+      "fr": "La chambre donne sur la mer.",
+      "arab": "الْشَامْبْرْ تْطَلْ عْلَى الْبْحَرْ",
+      "latn": "ech-chambre tettel 3la el-b7ar",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "voyage"
+      ]
+    },
+    {
+      "id": "PH-486",
+      "deck": "15-voyages-vacances",
+      "type": "phrase",
+      "fr": "On visite la casbah demain.",
+      "arab": "نْزُورُوا الْقَصْبَة غَدْوَة",
+      "latn": "nzourou el-qasba ghodwa",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "voyage"
+      ]
+    },
+    {
+      "id": "PH-487",
+      "deck": "15-voyages-vacances",
+      "type": "phrase",
+      "fr": "Prends des photos.",
+      "arab": "دِيرْ صُوَرْ",
+      "latn": "dir swar",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "voyage"
+      ]
+    },
+    {
+      "id": "PH-488",
+      "deck": "15-voyages-vacances",
+      "type": "phrase",
+      "fr": "Je ramène des souvenirs.",
+      "arab": "نْجِيبْ تَذْكَارَاتْ",
+      "latn": "njib tadkarat",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "voyage"
+      ]
+    },
+    {
+      "id": "PH-489",
+      "deck": "15-voyages-vacances",
+      "type": "phrase",
+      "fr": "Le check-in est à quinze heures.",
+      "arab": "الشِّيكْ إِينْ عْلَى الثَلْتَاشْ",
+      "latn": "ech-check-in 3la eth-theltach",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "voyage"
+      ]
+    },
+    {
+      "id": "PH-490",
+      "deck": "15-voyages-vacances",
+      "type": "phrase",
+      "fr": "On a raté la correspondance.",
+      "arab": "فَوَّتْنَا الْكُورِيسْبُونْدَانْسْ",
+      "latn": "fawwetna el-correspondance",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B2",
+      "tags": [
+        "voyage"
+      ]
+    },
+    {
+      "id": "PH-491",
+      "deck": "15-quotidien-express",
+      "type": "phrase",
+      "fr": "Attends-moi dehors.",
+      "arab": "سْتَنَّانِي بَرَّا",
+      "latn": "stennani berra",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "quotidien"
+      ]
+    },
+    {
+      "id": "PH-492",
+      "deck": "15-quotidien-express",
+      "type": "phrase",
+      "fr": "Je suis presque arrivé.",
+      "arab": "رَانِي قْرِيبْ نُوصَلْ",
+      "latn": "rani qrib nwassel",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "quotidien"
+      ]
+    },
+    {
+      "id": "PH-493",
+      "deck": "15-quotidien-express",
+      "type": "phrase",
+      "fr": "Cinq minutes et j’arrive.",
+      "arab": "خَمْسَة دَقَايَقْ وْ نْجِي",
+      "latn": "khemsa daqayeq w ndji",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "quotidien"
+      ]
+    },
+    {
+      "id": "PH-494",
+      "deck": "15-quotidien-express",
+      "type": "phrase",
+      "fr": "Qu’est-ce qui s’est passé ?",
+      "arab": "وَاشْ صْرَا ؟",
+      "latn": "wesh sra?",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "quotidien"
+      ]
+    },
+    {
+      "id": "PH-495",
+      "deck": "15-quotidien-express",
+      "type": "phrase",
+      "fr": "Raconte-moi.",
+      "arab": "حْكِيلِي",
+      "latn": "7kili",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "quotidien"
+      ]
+    },
+    {
+      "id": "PH-496",
+      "deck": "15-quotidien-express",
+      "type": "phrase",
+      "fr": "Je te jure.",
+      "arab": "نَحْلَفْلَكْ / وَاللَّهْ",
+      "latn": "ne7leflek / wallah",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "quotidien"
+      ]
+    },
+    {
+      "id": "PH-497",
+      "deck": "15-quotidien-express",
+      "type": "phrase",
+      "fr": "C’est vrai ?",
+      "arab": "صَحْ ؟",
+      "latn": "sah?",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "quotidien"
+      ]
+    },
+    {
+      "id": "PH-498",
+      "deck": "15-quotidien-express",
+      "type": "phrase",
+      "fr": "Je savais pas.",
+      "arab": "مَا كُنْتْشْ نَعْرَفْ",
+      "latn": "ma kountch na3ref",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "quotidien"
+      ]
+    },
+    {
+      "id": "PH-499",
+      "deck": "15-quotidien-express",
+      "type": "phrase",
+      "fr": "Laisse-moi réfléchir.",
+      "arab": "خَلِّينِي نَفَكَّرْ",
+      "latn": "khellini nefekker",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "quotidien"
+      ]
+    },
+    {
+      "id": "PH-500",
+      "deck": "15-quotidien-express",
+      "type": "phrase",
+      "fr": "On en reparle plus tard.",
+      "arab": "نَهْدْرُوا عْلِيهَا مَنْ بَعْدْ",
+      "latn": "nehdrou 3liha men ba3d",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "quotidien"
+      ]
+    },
+    {
+      "id": "PH-501",
+      "deck": "15-quotidien-express",
+      "type": "phrase",
+      "fr": "C’est quoi le plan ?",
+      "arab": "وَاشْ الْبْلَانْ ؟",
+      "latn": "wesh el-plan?",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "quotidien"
+      ]
+    },
+    {
+      "id": "PH-502",
+      "deck": "15-quotidien-express",
+      "type": "phrase",
+      "fr": "Comme tu veux.",
+      "arab": "كِيمَا تَبْغِي",
+      "latn": "kima tebghi",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "quotidien"
+      ]
+    },
+    {
+      "id": "PH-503",
+      "deck": "15-quotidien-express",
+      "type": "phrase",
+      "fr": "Moi aussi.",
+      "arab": "وَأَنَا كِيمَا هَكَّا / أَنَا تَانِي",
+      "latn": "w ana kima hakka / ana tani",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "quotidien"
+      ]
+    },
+    {
+      "id": "PH-504",
+      "deck": "15-quotidien-express",
+      "type": "phrase",
+      "fr": "Pas maintenant.",
+      "arab": "مَاشِي دَرْكَة",
+      "latn": "mashi derka",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "quotidien"
+      ]
+    },
+    {
+      "id": "PH-505",
+      "deck": "15-quotidien-express",
+      "type": "phrase",
+      "fr": "Plus tard inchallah.",
+      "arab": "مَنْ بَعْدْ إِنْ شَاء اللَّهْ",
+      "latn": "men ba3d inchaallah",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "quotidien"
+      ]
+    },
+    {
+      "id": "PH-506",
+      "deck": "15-quotidien-express",
+      "type": "phrase",
+      "fr": "Je m’en vais.",
+      "arab": "رَانِي نَمْشِي",
+      "latn": "rani nemchi",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "quotidien"
+      ]
+    },
+    {
+      "id": "PH-507",
+      "deck": "15-quotidien-express",
+      "type": "phrase",
+      "fr": "Reste encore un peu.",
+      "arab": "بْقَى شْوِيَّة",
+      "latn": "bqa chwiya",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "quotidien"
+      ]
+    },
+    {
+      "id": "PH-508",
+      "deck": "15-quotidien-express",
+      "type": "phrase",
+      "fr": "On se rappelle.",
+      "arab": "نَتْعَايْطُوا",
+      "latn": "net3aytou",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "quotidien"
+      ]
+    },
+    {
+      "id": "PH-509",
+      "deck": "15-quotidien-express",
+      "type": "phrase",
+      "fr": "Fais gaffe.",
+      "arab": "رُودْ بَالَكْ",
+      "latn": "roud balek",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "A2",
+      "tags": [
+        "quotidien"
+      ]
+    },
+    {
+      "id": "PH-510",
+      "deck": "15-quotidien-express",
+      "type": "phrase",
+      "fr": "Tout va bien se passer.",
+      "arab": "كُلْشِي غَادِي يَمْشِي مْلِيحْ",
+      "latn": "koulchi ghadi yemchi mli7",
+      "ex_arab": "",
+      "ex_fr": "",
+      "niv": "B1",
+      "tags": [
+        "quotidien"
       ]
     }
   ],
