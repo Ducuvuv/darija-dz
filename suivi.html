@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Suivi — Darija DZ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Fraunces:opsz,wght@9..144,600&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="has-tabbar" data-tab="suivi">
+  <main class="site-wrap">
+    <header class="flash-header">
+      <a class="flash-back" href="./index.html">←</a>
+      <h1 class="flash-title">Suivi</h1>
+    </header>
+
+    <section class="continue-card" id="today-session" hidden>
+      <p class="continue-kicker">Aujourd'hui</p>
+      <h2 class="continue-title" id="today-title">—</h2>
+      <p class="continue-meta" id="today-meta"></p>
+      <div class="continue-actions">
+        <a class="btn" id="today-flash" href="#">Flash</a>
+        <a class="btn secondary" id="today-deck" href="#">Fiche</a>
+        <a class="btn secondary" id="today-flemme" href="#">Flemme</a>
+      </div>
+    </section>
+
+    <div class="stat-grid">
+      <div class="stat-cell"><b id="stat-streak">0</b><span>Jours</span></div>
+      <div class="stat-cell"><b id="stat-failed">0</b><span>Ratés</span></div>
+      <div class="stat-cell"><b id="stat-seen">0 %</b><span>Corpus vu</span></div>
+    </div>
+
+    <p class="eyebrow">Ratés</p>
+    <section class="deck-panel" id="failed-panel"></section>
+    <div class="btn-row" style="margin-bottom:1rem">
+      <a class="btn secondary" id="btn-flash-failed" href="#">Revoir les ratés</a>
+    </div>
+
+    <p class="eyebrow">XP & badges</p>
+    <section class="deck-panel suivi-xp">
+      <p><strong id="stat-xp">0</strong> XP total</p>
+      <div class="badge-row" id="badge-list"></div>
+    </section>
+
+    <p class="eyebrow">Progression par deck</p>
+    <section class="deck-progress-list" id="deck-progress-list"></section>
+
+    <div class="btn-row suivi-reset">
+      <button type="button" class="btn secondary btn-sm" id="btn-reset-store">Reset progrès</button>
+      <button type="button" class="btn secondary btn-sm" id="btn-reset-all">Reset total</button>
+    </div>
+  </main>
+
+  <nav class="tabbar" aria-label="Navigation"><div class="tabbar-inner"></div></nav>
+
+  <script src="./data/cards.js"></script>
+  <script src="./js/engine.js"></script>
+  <script src="./js/store.js"></script>
+  <script src="./js/flash-srs.js"></script>
+  <script src="./js/today-target.js"></script>
+  <script src="./js/shell-tabbar.js"></script>
+  <script src="./js/suivi.js"></script>
+</body>
+</html>

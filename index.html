@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#1a1208" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>Darija DZ — Accueil</title>
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="has-tabbar" data-tab="home">
+  <main class="site-wrap">
+    <p class="pill live">5 min · 8 cartes · TDA-friendly</p>
+    <h1 class="brand">Darija <span>DZ</span></h1>
+    <p class="tagline">Darija algérienne générale · arabe voyellisé + latn · ~1 570 cartes · socle national + bonus Sétif.</p>
+
+    <div class="hud" id="dar-hud">
+      <div class="hud-stats">
+        <span id="dar-level">Nv.1</span>
+        <span id="dar-xp">0 XP</span>
+        <span id="dar-combo">—</span>
+      </div>
+      <div class="xp-track"><i id="dar-xp-bar"></i></div>
+      <button type="button" class="btn-mute" id="btn-mute">Son</button>
+      <div class="badge-row" id="dar-badges"></div>
+    </div>
+
+    <section class="continue-card" id="today-card" hidden>
+      <p class="continue-kicker">⏱ Aujourd&rsquo;hui</p>
+      <h2 class="continue-title" id="today-title">&mdash;</h2>
+      <p class="continue-meta" id="today-meta"></p>
+      <div class="continue-actions">
+        <a class="btn" id="today-flash" href="./flashcards.html">Flash 5 min</a>
+        <a class="btn secondary" id="today-deck" href="./deck.html">Fiche deck</a>
+        <a class="btn secondary" id="today-qcm" href="./qcm-player.html">QCM</a>
+      </div>
+    </section>
+
+    <div class="stat-grid">
+      <div class="stat-cell"><b id="stat-cards">—</b><span>Cartes</span></div>
+      <div class="stat-cell"><b id="stat-decks">—</b><span>Decks</span></div>
+      <div class="stat-cell"><b id="home-review">0</b><span>À revoir</span></div>
+    </div>
+
+    <div class="btn-row hub-quick">
+      <a class="btn secondary" href="./phrases.html">Phrases & dialogues</a>
+      <a class="btn secondary" href="./verbes.html">Verbes</a>
+    </div>
+
+    <div id="deck-hub"></div>
+
+    <section class="howto">
+      <h3>Routine flemmard</h3>
+      <ul>
+        <li><strong>8 cartes max</strong> · timer 5 min · pas de culpabilité si tu skips.</li>
+        <li>Face FR → dos <span class="arab" style="display:inline;font-size:1.1rem">عربي</span> + latn.</li>
+        <li>A1 national d&rsquo;abord (<code>02</code> + <code>03</code>) · Sétif en bonus.</li>
+        <li>Rebuild données : <code>python scripts/build-data.py</code></li>
+      </ul>
+    </section>
+  </main>
+
+  <nav class="tabbar" aria-label="Navigation"><div class="tabbar-inner"></div></nav>
+
+  <script src="./data/cards.js"></script>
+  <script src="./js/engine.js"></script>
+  <script src="./js/store.js"></script>
+  <script src="./js/flash-srs.js"></script>
+  <script src="./js/today-target.js"></script>
+  <script src="./js/shell-tabbar.js"></script>
+  <script src="./js/hub.js"></script>
+</body>
+</html>

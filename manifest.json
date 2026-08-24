@@ -1,0 +1,11 @@
+{
+  "name": "Darija DZ",
+  "short_name": "Darija",
+  "description": "App darija algérienne — flash, QCM, decks",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#1a1208",
+  "theme_color": "#d97706",
+  "lang": "fr",
+  "orientation": "portrait-primary"
+}

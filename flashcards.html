@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Flash — Darija DZ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Fraunces:opsz,wght@9..144,600&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="has-tabbar" data-tab="flash">
+  <main class="site-wrap flash-page">
+    <header class="flash-header">
+      <a class="flash-back" href="./index.html">←</a>
+      <h1 class="flash-title">Flash</h1>
+    </header>
+
+    <section id="flash-setup">
+      <p class="flash-intro">Face FR → dos arabe voyellisé. Max <strong>8 cartes</strong> · <strong>5 min</strong>. Pas de culpabilité.</p>
+
+      <div class="flash-panel">
+        <label class="field-label" for="deck-select">Deck</label>
+        <select id="deck-select" class="flash-select"></select>
+      </div>
+
+      <div class="flash-panel flash-modes">
+        <label class="flash-check"><input type="checkbox" id="mode-flemme" /> Mode flemme (5 ratés · 2 min)</label>
+        <label class="flash-check"><input type="checkbox" id="mode-reverse" /> Sens inverse (arabe → FR)</label>
+      </div>
+
+      <button type="button" class="btn btn-block" id="btn-start">Commencer</button>
+    </section>
+
+    <section id="flash-play" hidden>
+      <div class="flash-top">
+        <span id="flash-progress">1 / 8</span>
+        <span id="flash-timer" class="flash-timer">05:00</span>
+        <button type="button" class="btn secondary btn-sm" id="btn-exit">Sortir</button>
+      </div>
+
+      <div class="flash-card" id="flash-card" tabindex="0" role="button" aria-label="Carte flash">
+        <p class="flash-card-meta" id="card-meta">Tape pour retourner</p>
+        <div class="flash-face front" id="card-front"></div>
+        <div class="flash-face back" id="card-back"></div>
+      </div>
+
+      <div class="flash-actions">
+        <button type="button" class="btn secondary" id="btn-flip">Voir la réponse</button>
+        <label class="flash-latn-toggle"><input type="checkbox" id="toggle-latn" checked /> latn</label>
+      </div>
+
+      <div class="rate-wrap" id="rate-wrap" hidden>
+        <p class="rate-help">Tu savais ?</p>
+        <div class="rate-row">
+          <button type="button" class="btn bad" id="btn-fail">✗ Raté<small id="hint-again">aujourd'hui</small></button>
+          <button type="button" class="btn ok" id="btn-ok">✓ Je savais<small id="hint-good">demain</small></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="flash-end" hidden>
+      <div class="end-box">
+        <h2>Session terminée</h2>
+        <p id="end-stats">—</p>
+        <p class="end-note">Demain c'est demain. 5 min aujourd'hui = déjà bien.</p>
+        <div class="btn-row">
+          <button type="button" class="btn" id="btn-replay">Rejouer</button>
+          <button type="button" class="btn secondary" id="btn-failed">Mode flemme (ratés)</button>
+          <button type="button" class="btn secondary" id="btn-home">Accueil</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <nav class="tabbar" aria-label="Navigation"><div class="tabbar-inner"></div></nav>
+
+  <script src="./data/cards.js"></script>
+  <script src="./js/engine.js"></script>
+  <script src="./js/store.js"></script>
+  <script src="./js/flash-srs.js"></script>
+  <script src="./js/shell-tabbar.js"></script>
+  <script src="./js/flash-player.js"></script>
+</body>
+</html>

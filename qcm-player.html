@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>QCM — Darija DZ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Fraunces:opsz,wght@9..144,600&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="has-tabbar" data-tab="qcm">
+  <main class="site-wrap">
+    <header class="flash-header">
+      <a class="flash-back" href="./index.html">←</a>
+      <h1 class="flash-title">QCM</h1>
+    </header>
+
+    <section id="qcm-setup">
+      <p class="flash-intro">5 vies · traduction FR ↔ darija · explications avec arabe. Sessions courtes.</p>
+      <div id="qcm-list"></div>
+    </section>
+
+    <section id="qcm-play" hidden>
+      <div class="flash-top">
+        <span id="qcm-session-title">QCM</span>
+        <button type="button" class="btn secondary btn-sm" id="btn-exit-qcm">← Liste</button>
+      </div>
+      <div class="qcm-box" id="qcm-root"></div>
+    </section>
+  </main>
+
+  <nav class="tabbar" aria-label="Navigation"><div class="tabbar-inner"></div></nav>
+
+  <script src="./data/cards.js"></script>
+  <script src="./js/engine.js"></script>
+  <script src="./js/store.js"></script>
+  <script src="./js/qcm-bank.js"></script>
+  <script src="./js/qcm.js"></script>
+  <script src="./js/qcm-player.js"></script>
+  <script src="./js/shell-tabbar.js"></script>
+</body>
+</html>
