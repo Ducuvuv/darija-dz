@@ -942,6 +942,101 @@ a:hover { color: var(--accent-2); }
 .dlg-line.role-a b { color: var(--accent); }
 .dlg-line.role-b b { color: var(--green); }
 
+.dlg-stage {
+  margin: 1rem 0 1.5rem;
+  padding: 1rem;
+  border-radius: 16px;
+  border: 1px solid rgba(217, 119, 6, 0.35);
+  background: linear-gradient(165deg, rgba(40, 28, 12, 0.95), rgba(20, 14, 6, 0.98));
+  box-shadow: var(--shadow);
+}
+.dlg-stage-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+.dlg-role-pick { margin-bottom: 0.75rem; }
+.dlg-role-btn.active-role {
+  border-color: var(--accent) !important;
+  background: rgba(217, 119, 6, 0.22) !important;
+  color: #fef3c7 !important;
+}
+.dlg-progress {
+  margin: 0 0 0.45rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+.dlg-stage .dialogue-player {
+  position: static;
+  margin: 0 0 0.75rem;
+  box-shadow: none;
+}
+.dlg-role-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.75rem;
+  height: 1.75rem;
+  padding: 0 0.4rem;
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 0.85rem;
+  background: rgba(217, 119, 6, 0.25);
+  color: var(--accent);
+  margin-inline-end: 0.45rem;
+  vertical-align: middle;
+}
+.dialogue-player.role-b .dlg-role-badge {
+  background: rgba(34, 120, 70, 0.25);
+  color: #86efac;
+}
+.dlg-hint {
+  margin: 0.55rem 0 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+.dlg-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.65rem;
+}
+.dlg-controls .btn { min-width: 2.75rem; }
+#dlg-said { margin-bottom: 0.75rem; }
+.dlg-script {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 14rem;
+  overflow: auto;
+  border-top: 1px dashed var(--line);
+  padding-top: 0.55rem;
+}
+.dlg-script-line {
+  padding: 0.35rem 0.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.86rem;
+  opacity: 0.55;
+}
+.dlg-script-line b { margin-inline-end: 0.3rem; }
+.dlg-script-line.role-a b { color: var(--accent); }
+.dlg-script-line.role-b b { color: #86efac; }
+.dlg-script-line.done { opacity: 0.75; }
+.dlg-script-line.current {
+  opacity: 1;
+  background: rgba(217, 119, 6, 0.12);
+  border: 1px solid rgba(217, 119, 6, 0.28);
+}
+.dlg-script-line .arab {
+  font-size: 1.05rem;
+  display: inline;
+}
+
 .dialogue-player {
   position: sticky;
   bottom: calc(var(--tabbar-h) + 0.5rem);

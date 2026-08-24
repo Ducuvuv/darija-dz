@@ -19,11 +19,46 @@
       <a class="flash-back" href="./index.html">←</a>
       <h1 class="flash-title">Phrases</h1>
     </header>
-    <p class="flash-intro">Phrases entières + dialogues. Joue A/B à voix haute — 5 min max.</p>
+    <p class="flash-intro">Phrases entières + dialogues. Choisis ton rôle A ou B, pause quand c’est à toi.</p>
 
-    <p class="eyebrow">Dialogues</p>
+    <p class="eyebrow">Dialogues A/B</p>
     <section class="deck-panel" id="dialogue-list"></section>
-    <div class="dialogue-player" id="dialogue-player" hidden></div>
+
+    <div class="dlg-stage" id="dlg-stage" hidden>
+      <div class="dlg-stage-head">
+        <strong id="dlg-title">Dialogue</strong>
+        <button type="button" class="btn secondary btn-sm" id="dlg-close">Fermer</button>
+      </div>
+
+      <div class="dlg-role-pick" id="dlg-role-pick">
+        <span class="field-label">Ton rôle</span>
+        <div class="btn-row">
+          <button type="button" class="btn secondary dlg-role-btn" data-role="auto">Auto</button>
+          <button type="button" class="btn secondary dlg-role-btn" data-role="A">Je suis A</button>
+          <button type="button" class="btn secondary dlg-role-btn" data-role="B">Je suis B</button>
+        </div>
+      </div>
+
+      <p class="dlg-progress" id="dlg-progress">1 / 1</p>
+      <div class="dialogue-player" id="dialogue-player">
+        <p class="dlg-now">
+          <span class="dlg-role-badge" id="dlg-role">A</span>
+          <span class="arab" id="dlg-text"></span>
+        </p>
+        <p class="dlg-hint" id="dlg-hint"></p>
+      </div>
+
+      <div class="dlg-controls">
+        <button type="button" class="btn secondary" id="dlg-prev" title="Précédent">‹</button>
+        <button type="button" class="btn" id="dlg-play">▶ Lecture</button>
+        <button type="button" class="btn secondary" id="dlg-pause">⏸ Pause</button>
+        <button type="button" class="btn secondary" id="dlg-next" title="Suivant">›</button>
+        <button type="button" class="btn secondary" id="dlg-replay" title="Réécouter">🔊</button>
+      </div>
+      <button type="button" class="btn btn-block" id="dlg-said" hidden>J’ai dit ma réplique →</button>
+
+      <ol class="dlg-script" id="dlg-script"></ol>
+    </div>
 
     <p class="eyebrow">Par deck</p>
     <div id="phrase-decks"></div>

@@ -61,6 +61,8 @@
       u.lang = (v && v.lang) || "ar-SA";
       u.rate = opts.rate || 0.9;
       u.pitch = 1;
+      if (opts.onend) u.onend = opts.onend;
+      if (opts.onerror) u.onerror = opts.onerror;
       speechSynthesis.speak(u);
       return true;
     } catch (_) {
