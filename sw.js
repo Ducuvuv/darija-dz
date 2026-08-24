@@ -1,5 +1,5 @@
 /* Darija DZ — offline shell + corpus */
-var CACHE = "darija-dz-v7";
+var CACHE = "darija-dz-v8";
 var ASSETS = [
   "./",
   "./index.html",
@@ -10,12 +10,17 @@ var ASSETS = [
   "./phrases.html",
   "./verbes.html",
   "./paires.html",
+  "./culture.html",
+  "./cours.html",
+  "./cours-module.html",
   "./styles.css",
   "./manifest.json",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
   "./data/cards.js",
   "./data/pairs.js",
+  "./data/culture.js",
+  "./data/cours.js",
   "./js/engine.js",
   "./js/store.js",
   "./js/flash-srs.js",
@@ -32,6 +37,9 @@ var ASSETS = [
   "./js/verbes.js",
   "./js/tts.js",
   "./js/paires.js",
+  "./js/culture.js",
+  "./js/cours.js",
+  "./js/cours-module.js",
 ];
 
 self.addEventListener("install", function (event) {

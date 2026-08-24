@@ -1037,6 +1037,120 @@ a:hover { color: var(--accent-2); }
   display: inline;
 }
 
+/* —— Culture & cours —— */
+.culture-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+.culture-tab.active {
+  border-color: var(--accent) !important;
+  background: rgba(217, 119, 6, 0.22) !important;
+  color: #fef3c7 !important;
+}
+.culture-card {
+  margin-bottom: 0.65rem;
+  padding: 0.75rem 0.85rem;
+  border-radius: 12px;
+  border: 1px solid rgba(217, 119, 6, 0.18);
+  background: rgba(26, 18, 8, 0.35);
+}
+.culture-card.flat h3 {
+  margin: 0 0 0.35rem;
+  font-family: var(--display);
+  font-size: 1.05rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+}
+.culture-card summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.culture-card summary::-webkit-details-marker { display: none; }
+.culture-name {
+  font-family: var(--display);
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+.culture-arab { font-size: 1.25rem; }
+.culture-nick {
+  margin: 0.55rem 0 0.35rem;
+  font-size: 0.82rem;
+  color: var(--accent);
+  font-weight: 700;
+}
+.culture-vocab {
+  margin: 0.5rem 0 0;
+  padding-inline-start: 1.1rem;
+  font-size: 0.9rem;
+}
+.fact-row {
+  padding: 0.55rem 0;
+  border-bottom: 1px solid rgba(217, 119, 6, 0.12);
+}
+.fact-row p { margin: 0.2rem 0; }
+.fact-tags { display: flex; flex-wrap: wrap; gap: 0.25rem; }
+.facts-flash {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 14px;
+  border: 1px solid rgba(217, 119, 6, 0.35);
+  background: rgba(40, 28, 12, 0.85);
+}
+.fact-flash-text {
+  font-size: 1.05rem;
+  line-height: 1.45;
+  margin: 0.5rem 0 0.85rem;
+}
+
+.cours-level h2 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: 1.25rem;
+}
+.cours-level-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+.cours-mod-list {
+  display: grid;
+  gap: 0.45rem;
+  margin-top: 0.75rem;
+}
+.cours-mod-link {
+  display: grid;
+  gap: 0.15rem;
+  padding: 0.7rem 0.8rem;
+  border-radius: 10px;
+  border: 1px solid rgba(217, 119, 6, 0.2);
+  text-decoration: none;
+  color: inherit;
+  background: rgba(26, 18, 8, 0.4);
+}
+.cours-mod-link:hover {
+  border-color: var(--accent);
+}
+.cours-list {
+  margin: 0.35rem 0 0;
+  padding-inline-start: 1.15rem;
+  line-height: 1.45;
+}
+.deck-panel h2 {
+  font-family: var(--display);
+  font-size: 1.1rem;
+  margin: 0 0 0.45rem;
+}
+
 .dialogue-player {
   position: sticky;
   bottom: calc(var(--tabbar-h) + 0.5rem);
