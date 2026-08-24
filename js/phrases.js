@@ -105,6 +105,7 @@
       document.getElementById("dlg-text").textContent = ln.text;
       elPlayer.className = "dialogue-player role-" + ln.role.toLowerCase();
       if (window.DAR) DAR.sfx.click();
+      if (window.DAR_TTS) DAR_TTS.speak(ln.text);
       i += 1;
     }
     showLine();
