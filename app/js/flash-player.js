@@ -35,6 +35,8 @@
   var sessionMax = 8;
   var reverse = false;
   var showLatn = true;
+  var listenMode = false;
+  var listenPlays = 0;
 
   function fmtTime(s) {
     var m = Math.floor(s / 60);
@@ -98,8 +100,42 @@
     return d.innerHTML;
   }
 
+  function speakCurrent(times) {
+    var card = session[index];
+    if (!card || !window.DAR_TTS) return;
+    var text = card.arab || card.latn || "";
+    if (!text) return;
+    times = times || 1;
+    DAR_TTS.speak(text);
+    if (times > 1) {
+      setTimeout(function () { DAR_TTS.speak(text); }, 1600);
+    }
+  }
+
+  function renderFront(card) {
+    if (listenMode) {
+      return (
+        '<p class="listen-prompt">Écoute · répète à voix haute</p>' +
+        '<p class="arab flash-arab">' + esc(card.arab) + "</p>" +
+        (showLatn && card.latn ? '<p class="latn flash-latn">' + esc(card.latn) + "</p>" : "") +
+        '<p class="listen-hint">Tape pour voir le français</p>'
+      );
+    }
+    if (reverse) {
+      return '<p class="arab flash-arab">' + esc(card.arab) + "</p>" +
+        (showLatn && card.latn ? '<p class="latn flash-latn">' + esc(card.latn) + "</p>" : "");
+    }
+    return '<p class="flash-fr">' + esc(card.fr) + "</p>";
+  }
+
   function renderBack(card) {
     var html = "";
+    if (listenMode) {
+      html += '<p class="flash-fr">' + esc(card.fr) + "</p>";
+      if (card.ex_fr) html += '<p class="flash-ex-fr">' + esc(card.ex_fr) + "</p>";
+      if (card.ex_arab) html += '<p class="arab flash-ex-arab">' + esc(card.ex_arab) + "</p>";
+      return html;
+    }
     if (reverse) {
       html += '<p class="flash-fr">' + esc(card.fr) + "</p>";
       if (card.ex_fr) html += '<p class="flash-ex-fr">' + esc(card.ex_fr) + "</p>";
@@ -113,36 +149,6 @@
     return html;
   }
 
-  function renderFront(card) {
-    if (reverse) {
-      return '<p class="arab flash-arab">' + esc(card.arab) + "</p>" +
-        (showLatn && card.latn ? '<p class="latn flash-latn">' + esc(card.latn) + "</p>" : "");
-    }
-    return '<p class="flash-fr">' + esc(card.fr) + "</p>";
-  }
-
-  function speakCurrent() {
-    var card = session[index];
-    if (!card || !window.DAR_TTS) return;
-    var text = card.arab || card.latn || "";
-    if (!text) return;
-    DAR_TTS.speak(text);
-  }
-
-  function setFlipped(on) {
-    flipped = !!on;
-    elCard.classList.toggle("flipped", flipped);
-    elRateWrap.hidden = !flipped;
-    elFlipBtn.textContent = flipped ? "Cacher" : "Voir la réponse";
-    elMeta.textContent = flipped ? "Tu savais ?" : (elMeta.dataset.base || "Tape pour retourner");
-    if (flipped) {
-      updateHints();
-      speakCurrent();
-    } else if (window.DAR_TTS) {
-      DAR_TTS.stop();
-    }
-  }
-
   function updateHints() {
     var card = session[index];
     if (!card) return;
@@ -154,14 +160,32 @@
     if (elG) elG.textContent = SRS.formatDays(good.interval);
   }
 
+  function setFlipped(on) {
+    flipped = !!on;
+    elCard.classList.toggle("flipped", flipped);
+    elRateWrap.hidden = !flipped;
+    elFlipBtn.textContent = flipped ? "Cacher" : (listenMode ? "Voir le français" : "Voir la réponse");
+    elMeta.textContent = flipped ? "Tu savais ?" : (elMeta.dataset.base || "Tape pour retourner");
+    if (flipped) {
+      updateHints();
+      if (!listenMode) speakCurrent(1);
+    } else if (window.DAR_TTS && !listenMode) {
+      DAR_TTS.stop();
+    }
+  }
+
   function renderCard() {
     var card = session[index];
     if (!card) return;
     elFront.innerHTML = renderFront(card);
     elBack.innerHTML = renderBack(card);
-    elMeta.dataset.base = card.id + " · " + card.niv + " · tape pour retourner";
+    elMeta.dataset.base = card.id + " · " + card.niv + (listenMode ? " · écoute" : " · tape pour retourner");
     elProgress.textContent = index + 1 + " / " + session.length;
     setFlipped(false);
+    if (listenMode) {
+      listenPlays = 0;
+      setTimeout(function () { speakCurrent(2); }, 250);
+    }
   }
 
   function flip() {
@@ -240,12 +264,16 @@
     var deckId = deckParam || (elDeckSelect && elDeckSelect.value) || null;
     var mode = modeParam === "flemme" ? "flemme" : "normal";
     var settings = STORE.get().settings || {};
+    var listenCheck = document.getElementById("mode-listen");
+    listenMode = modeParam === "listen" || (listenCheck && listenCheck.checked);
 
     sessionMax = mode === "flemme" ? (settings.flemmeMax || 5) : (settings.sessionMax || 8);
     var minutes = mode === "flemme" ? (settings.flemmeMinutes || 2) : (settings.sessionMinutes || 5);
     showLatn = settings.showLatn !== false;
     var reverseCheck = document.getElementById("mode-reverse");
-    if (modeParam === "reverse" || (reverseCheck && reverseCheck.checked)) {
+    if (listenMode) {
+      reverse = false;
+    } else if (modeParam === "reverse" || (reverseCheck && reverseCheck.checked)) {
       reverse = true;
     } else if (mode !== "flemme") {
       reverse = STORE.toggleReverseForSession();
@@ -285,12 +313,17 @@
     populateDecks();
     var modeFlemme = document.getElementById("mode-flemme");
     var modeReverse = document.getElementById("mode-reverse");
+    var modeListen = document.getElementById("mode-listen");
     if (modeFlemme) modeFlemme.checked = modeParam === "flemme";
     if (modeReverse) modeReverse.checked = modeParam === "reverse";
+    if (modeListen) modeListen.checked = modeParam === "listen";
 
     document.getElementById("btn-start").addEventListener("click", function () {
       deckParam = elDeckSelect.value || null;
-      modeParam = modeFlemme && modeFlemme.checked ? "flemme" : (modeReverse && modeReverse.checked ? "reverse" : "normal");
+      if (modeFlemme && modeFlemme.checked) modeParam = "flemme";
+      else if (modeListen && modeListen.checked) modeParam = "listen";
+      else if (modeReverse && modeReverse.checked) modeParam = "reverse";
+      else modeParam = "normal";
       startSession();
     });
   }

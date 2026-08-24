@@ -183,6 +183,34 @@ Comme une **fiche biochimie** mais pour un deck langue :
 
 ---
 
+## Roadmap v2 — optimisation (ordre strict)
+
+| # | Livrable | Statut |
+| --- | --- | --- |
+| 1 | TTS + bouton unique « Aujourd’hui » | **fait** |
+| 2 | **Mode écoute** (arabe → répète → flip FR) | **fait** |
+| 3 | PWA offline (service worker) | à faire |
+| 4 | Export Anki CSV (ratés) | à faire |
+| 5 | Encore + phrases orales (lots) | continu |
+| 6 | Mode dictée latn | à faire |
+| 7 | Paires/contrasts forcés | à faire |
+| 8 | Dialogues rôle A/B + pause | à faire |
+| **FIN** | **Culture DZ + cours complets** | **en dernier** |
+
+### Phase FINALE — Culture & cours (après toute la todo)
+
+À faire **seulement quand** 1→8 sont done :
+
+- [ ] Page **`culture.html`** (hub)
+- [ ] **Villes** : Alger, Oran, Constantine, Sétif, Annaba, Tlemcen, Bejaia… (repères + vocab)
+- [ ] **Figures** : personnages / artistes / sportifs / figures historiques (niveau approprié)
+- [ ] **Fun facts** : 40–60 cartes courtes (food, foot, expressions, quotidien)
+- [ ] **Cours complets** : modules structurés A1→B2 (grammaire + situations + checklists)
+  - fichiers md type `20-cours-a1.md` … + pages app `cours.html` / `cours-module.html`
+- [ ] Lien Culture depuis l’accueil + Suivi
+
+---
+
 ## Ordre des sessions ensemble
 
 | Session | On fait quoi | Livrable |
@@ -193,35 +221,32 @@ Comme une **fiche biochimie** mais pour un deck langue :
 | **4** | Phase 5 + 8 | deck + suivi + today-target |
 | **5** | Phase 6 | QCM |
 | **6** | Phase 7 + 9 + 10 | phrases, verbes, style, deploy |
+| **7+** | Roadmap v2 #2→8 | écoute, PWA, Anki, phrases… |
+| **DERNIÈRE** | Culture + cours complets | villes, figures, fun facts, modules |
 
 ---
 
 ## Spécifique langue (checklist à ne pas oublier)
 
-- [ ] Police arabe web (Google Fonts)
-- [ ] `dir="rtl"` sur blocs arab / ex_arab
-- [ ] `latn` toujours LTR même dans bloc RTL
-- [ ] Taille police arabe ≥ 1.4rem (lisibilité voyelles)
-- [ ] Pas de « purifier » le franglais dans les exemples (c’est la vraie darija)
-- [ ] Deck **Sétif** (`01`) badge « bonus Est » séparé du socle
-- [ ] Export ratés → révision ciblée
+- [x] Police arabe web (Google Fonts)
+- [x] `dir="rtl"` / blocs arab
+- [x] `latn` LTR
+- [x] Taille police arabe ≥ 1.4rem
+- [ ] Pas de « purifier » le franglais
+- [x] Deck **Sétif** badge bonus Est
+- [ ] Export ratés → Anki
 
 ---
 
-## Plus tard (v1+)
+## Plus tard (après culture)
 
-- [ ] Audio TTS arabe (Web Speech API test)
-- [ ] Export Anki CSV
+- [x] Audio TTS arabe (Web Speech API)
 - [ ] Liens écoute (séries DZ) dans suivi
 - [ ] Dark mode
 
 ---
 
-## Prochaine session — tu dis « go session 1 »
+## Prochaine étape
 
-On enchaîne :
-1. Init git + dossier `app/`
-2. `build-data.mjs` → premier `cards.js`
-3. Squelette `index.html` hub (copie adaptée biochimie)
+**Mode écoute** → puis PWA → Anki → … → **Culture en tout dernier**.
 
-**À valider avant :** palette **PASS** (sobre) ou **Biochimie** (colorée) ? Tabbar oui/non ?
