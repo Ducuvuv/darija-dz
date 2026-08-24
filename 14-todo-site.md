@@ -150,7 +150,7 @@ Comme une **fiche biochimie** mais pour un deck langue :
 
 - [ ] **`phrases.html`** : cartes phrase entière (`03`, `08`) — pas mot isolé
 - [ ] **`verbes.html`** : tableaux conjugaison `04-verbes` (rani, nro7, kla…)
-- [ ] Dialogues : lecture + bouton « jouer le dialogue » (A/B alterné)
+- [x] Dialogues : lecture + bouton « jouer le dialogue » (A/B alterné)
 
 ---
 
@@ -194,7 +194,7 @@ Comme une **fiche biochimie** mais pour un deck langue :
 | 5 | Encore + phrases orales (lots) | continu |
 | 6 | Mode dictée latn + **clavier arabe** | **fait** |
 | 7 | Paires/contrasts forcés | **fait** |
-| 8 | Dialogues rôle A/B + pause | à faire |
+| 8 | Dialogues rôle A/B + pause | **fait** |
 | **FIN** | **Culture DZ + cours complets** | **en dernier** |
 
 ### Phase FINALE — Culture & cours (après toute la todo)
@@ -248,5 +248,5 @@ Comme une **fiche biochimie** mais pour un deck langue :
 
 ## Prochaine étape
 
-**Dialogues A/B + pause** → **Culture en tout dernier**.
+**Culture + cours complets** (phase FINALE — villes, figures, fun facts, modules A1→B2).
 
