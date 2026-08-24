@@ -121,13 +121,26 @@
     return '<p class="flash-fr">' + esc(card.fr) + "</p>";
   }
 
+  function speakCurrent() {
+    var card = session[index];
+    if (!card || !window.DAR_TTS) return;
+    var text = card.arab || card.latn || "";
+    if (!text) return;
+    DAR_TTS.speak(text);
+  }
+
   function setFlipped(on) {
     flipped = !!on;
     elCard.classList.toggle("flipped", flipped);
     elRateWrap.hidden = !flipped;
     elFlipBtn.textContent = flipped ? "Cacher" : "Voir la réponse";
     elMeta.textContent = flipped ? "Tu savais ?" : (elMeta.dataset.base || "Tape pour retourner");
-    if (flipped) updateHints();
+    if (flipped) {
+      updateHints();
+      speakCurrent();
+    } else if (window.DAR_TTS) {
+      DAR_TTS.stop();
+    }
   }
 
   function updateHints() {
@@ -284,7 +297,7 @@
 
   function wirePlay() {
     elCard.addEventListener("click", function (e) {
-      if (e.target.closest(".flash-actions")) return;
+      if (e.target.closest(".flash-actions") || e.target.closest("#btn-speak")) return;
       flip();
     });
     elCard.addEventListener("keydown", function (e) {
@@ -294,10 +307,18 @@
       }
     });
     elFlipBtn.addEventListener("click", flip);
+    var btnSpeak = document.getElementById("btn-speak");
+    if (btnSpeak) {
+      btnSpeak.addEventListener("click", function (e) {
+        e.stopPropagation();
+        speakCurrent();
+      });
+    }
     document.getElementById("btn-ok").addEventListener("click", function () { rate("good"); });
     document.getElementById("btn-fail").addEventListener("click", function () { rate("again"); });
     document.getElementById("btn-exit").addEventListener("click", function () {
       stopTimer();
+      if (window.DAR_TTS) DAR_TTS.stop();
       show("setup");
     });
     if (elLatnToggle) {

@@ -22,6 +22,7 @@ const SOURCES = [
   { file: "03-phrases-dialogues.md", kind: "phrase", deckPrefix: "03" },
   { file: "08-phrases-b2.md", kind: "phrase", deckPrefix: "08" },
   { file: "15-phrases-suite.md", kind: "phrase", deckPrefix: "15" },
+  { file: "16-phrases-plus.md", kind: "phrase", deckPrefix: "16" },
 ];
 
 function slug(s) {

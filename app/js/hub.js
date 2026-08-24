@@ -47,14 +47,14 @@
 
     document.getElementById("stat-cards").textContent = stats.cards;
     document.getElementById("stat-decks").textContent = stats.decks;
-    document.getElementById("stat-words").textContent = stats.words;
 
     if (TODAY && STORE) {
       var target = TODAY.getTodayTarget(true);
       if (target) {
         var links = TODAY.hrefsFor(target.deckId);
         document.getElementById("today-title").textContent = target.title || target.deckId;
-        document.getElementById("today-meta").textContent = TODAY.reasonLabel(target.reason, target);
+        document.getElementById("today-meta").textContent = TODAY.reasonLabel(target.reason, target) + " · 8 cartes · audio";
+        document.getElementById("today-go").href = links.flash;
         document.getElementById("today-flash").href = links.flash;
         document.getElementById("today-deck").href = links.deck;
         document.getElementById("today-qcm").href = links.qcm;

@@ -792,7 +792,9 @@ a:hover { color: var(--accent-2); }
 .qcm-actions { margin-top: 0.65rem; display: flex; gap: 0.4rem; flex-wrap: wrap; }
 .qcm-end { margin: 0.75rem 0 0; color: var(--accent); font-weight: 700; }
 
-.hub-quick { margin-bottom: 1.25rem; }
+.continue-secondary { margin-top: 0.65rem; }
+#today-go { margin-top: 0.35rem; font-size: 1rem; min-height: 3rem; }
+#btn-speak { min-width: 2.75rem; font-size: 1.1rem; }
 
 /* —— Phrases —— */
 .phrase-deck h3 { font-family: var(--display); font-size: 1.05rem; margin: 0 0 0.65rem; display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
