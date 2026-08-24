@@ -132,7 +132,7 @@ Comme une **fiche biochimie** mais pour un deck langue :
 - [ ] Liste cartes repliable (lecture seule, arabe voyellisé)
 - [ ] **Mini-exos** du markdown (FR → darija, compléter)
 - [ ] Bouton **« Lancer flash (8) »** → flashcards.html?deck=…
-- [ ] Section **paires** (rak/raki, kayen/makach) si présentes dans le md
+- [x] Section **paires** (rak/raki, kayen/makach) si présentes dans le md
 
 ---
 
@@ -193,7 +193,7 @@ Comme une **fiche biochimie** mais pour un deck langue :
 | 4 | Export Anki CSV (ratés) | **fait** |
 | 5 | Encore + phrases orales (lots) | continu |
 | 6 | Mode dictée latn + **clavier arabe** | **fait** |
-| 7 | Paires/contrasts forcés | à faire |
+| 7 | Paires/contrasts forcés | **fait** |
 | 8 | Dialogues rôle A/B + pause | à faire |
 | **FIN** | **Culture DZ + cours complets** | **en dernier** |
 
@@ -248,5 +248,5 @@ Comme une **fiche biochimie** mais pour un deck langue :
 
 ## Prochaine étape
 
-**Paires/contrasts** → dialogues A/B → **Culture en tout dernier**.
+**Dialogues A/B + pause** → **Culture en tout dernier**.
 

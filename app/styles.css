@@ -987,3 +987,64 @@ a:hover { color: var(--accent-2); }
   .verb-table .arab { font-size: 1rem; }
 }
 
+/* —— Paires —— */
+.pairs-theme {
+  margin: 0 0 0.55rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.pairs-card .pair-member {
+  margin-bottom: 0.35rem;
+}
+.pairs-card .pair-member.big .flash-arab {
+  font-size: 1.75rem;
+}
+.pair-vs {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--accent);
+  margin: 0.35rem 0;
+}
+.pairs-actions {
+  margin-top: 0.85rem;
+  display: grid;
+  gap: 0.55rem;
+}
+.pairs-choices {
+  display: grid;
+  gap: 0.45rem;
+}
+.pairs-choice {
+  display: grid;
+  gap: 0.15rem;
+  text-align: start !important;
+  padding: 0.75rem 0.9rem !important;
+  min-height: auto !important;
+}
+.pairs-choice .arab {
+  font-family: var(--arab);
+  font-size: 1.35rem;
+  text-align: right;
+  display: block;
+}
+.pairs-choice .latn {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.pairs-choice .choice-fr {
+  font-size: 0.8rem;
+  font-weight: 650;
+}
+.pairs-choice.ok {
+  border-color: rgba(74, 180, 110, 0.7) !important;
+  background: rgba(34, 120, 70, 0.2) !important;
+}
+.pairs-choice.bad {
+  border-color: rgba(220, 90, 90, 0.7) !important;
+  background: rgba(140, 40, 40, 0.2) !important;
+}
+
