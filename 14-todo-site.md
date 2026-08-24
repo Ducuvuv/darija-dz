@@ -195,19 +195,19 @@ Comme une **fiche biochimie** mais pour un deck langue :
 | 6 | Mode dictée latn + **clavier arabe** | **fait** |
 | 7 | Paires/contrasts forcés | **fait** |
 | 8 | Dialogues rôle A/B + pause | **fait** |
-| **FIN** | **Culture DZ + cours complets** | **en dernier** |
+| **FIN** | **Culture DZ + cours complets** | **fait** |
 
 ### Phase FINALE — Culture & cours (après toute la todo)
 
 À faire **seulement quand** 1→8 sont done :
 
-- [ ] Page **`culture.html`** (hub)
-- [ ] **Villes** : Alger, Oran, Constantine, Sétif, Annaba, Tlemcen, Bejaia… (repères + vocab)
-- [ ] **Figures** : personnages / artistes / sportifs / figures historiques (niveau approprié)
-- [ ] **Fun facts** : 40–60 cartes courtes (food, foot, expressions, quotidien)
-- [ ] **Cours complets** : modules structurés A1→B2 (grammaire + situations + checklists)
+- [x] Page **`culture.html`** (hub)
+- [x] **Villes** : Alger, Oran, Constantine, Sétif, Annaba, Tlemcen, Bejaia… (repères + vocab)
+- [x] **Figures** : personnages / artistes / sportifs / figures historiques (niveau approprié)
+- [x] **Fun facts** : 40–60 cartes courtes (food, foot, expressions, quotidien)
+- [x] **Cours complets** : modules structurés A1→B2 (grammaire + situations + checklists)
   - fichiers md type `20-cours-a1.md` … + pages app `cours.html` / `cours-module.html`
-- [ ] Lien Culture depuis l’accueil + Suivi
+- [x] Lien Culture depuis l’accueil + Suivi
 
 ---
 
@@ -248,5 +248,5 @@ Comme une **fiche biochimie** mais pour un deck langue :
 
 ## Prochaine étape
 
-**Culture + cours complets** (phase FINALE — villes, figures, fun facts, modules A1→B2).
+**Roadmap v2 terminée** (écoute → PWA → Anki → dictée → clavier → paires → dialogues → **Culture + cours**).
 

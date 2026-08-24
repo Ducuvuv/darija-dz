@@ -264,7 +264,7 @@ Même modèle que **PASS Sorbonne** / **Biochimie LAS** : dossier `app/`, HTML/J
 
 Voir [`app/README.md`](app/README.md) — deploy depuis le dossier `app/` sur branche `gh-pages`.
 
-**App v1 complète** : flash · QCM · decks · phrases · verbes · suivi · **PWA offline** · export Anki (ratés).
+**App v1 complète** : flash · QCM · decks · phrases · verbes · suivi · **PWA offline** · export Anki · paires · culture · cours A1→B2.
 
 → Roadmap : [14-todo-site.md](14-todo-site.md)  
 → Plan TDAH : [13-plan-TDAH.md](13-plan-TDAH.md)
