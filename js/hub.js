@@ -58,6 +58,8 @@
         document.getElementById("today-flash").href = links.flash;
         document.getElementById("today-deck").href = links.deck;
         document.getElementById("today-qcm").href = links.qcm;
+        var listenBtn = document.getElementById("today-listen");
+        if (listenBtn) listenBtn.href = links.listen;
         document.getElementById("today-card").hidden = false;
 
         var failed = (STORE.get().failed || []).length;

@@ -796,6 +796,22 @@ a:hover { color: var(--accent-2); }
 #today-go { margin-top: 0.35rem; font-size: 1rem; min-height: 3rem; }
 #btn-speak { min-width: 2.75rem; font-size: 1.1rem; }
 
+.listen-prompt {
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  margin: 0 0 0.65rem;
+}
+
+.listen-hint {
+  margin: 0.85rem 0 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
 /* —— Phrases —— */
 .phrase-deck h3 { font-family: var(--display); font-size: 1.05rem; margin: 0 0 0.65rem; display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
 

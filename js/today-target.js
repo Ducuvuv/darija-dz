@@ -114,6 +114,7 @@
       deck: "./deck.html?id=" + q,
       qcm: "./qcm-player.html?deck=" + q,
       flemme: "./flashcards.html?deck=" + q + "&mode=flemme",
+      listen: "./flashcards.html?deck=" + q + "&mode=listen",
     };
   }
 
