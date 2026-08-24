@@ -170,7 +170,7 @@ Comme une **fiche biochimie** mais pour un deck langue :
 - [ ] Thème darija : teintes **ambre / sable / vert** (Algérie) — pas copier teal biochimie
 - [ ] **Responsive** + safe-area (comme PASS viewport-fit)
 - [ ] Tabbar bas si validé phase 0
-- [ ] PWA minimal (manifest + icône) — option
+- [x] PWA minimal (manifest + icône) — option
 
 ---
 
@@ -189,8 +189,8 @@ Comme une **fiche biochimie** mais pour un deck langue :
 | --- | --- | --- |
 | 1 | TTS + bouton unique « Aujourd’hui » | **fait** |
 | 2 | **Mode écoute** (arabe → répète → flip FR) | **fait** |
-| 3 | PWA offline (service worker) | à faire |
-| 4 | Export Anki CSV (ratés) | à faire |
+| 3 | PWA offline (service worker) | **fait** |
+| 4 | Export Anki CSV (ratés) | **fait** |
 | 5 | Encore + phrases orales (lots) | continu |
 | 6 | Mode dictée latn | à faire |
 | 7 | Paires/contrasts forcés | à faire |
@@ -234,7 +234,7 @@ Comme une **fiche biochimie** mais pour un deck langue :
 - [x] Taille police arabe ≥ 1.4rem
 - [ ] Pas de « purifier » le franglais
 - [x] Deck **Sétif** badge bonus Est
-- [ ] Export ratés → Anki
+- [x] Export ratés → Anki
 
 ---
 
@@ -248,5 +248,5 @@ Comme une **fiche biochimie** mais pour un deck langue :
 
 ## Prochaine étape
 
-**Mode écoute** → puis PWA → Anki → … → **Culture en tout dernier**.
+**Dictée latn** → paires → dialogues A/B → **Culture en tout dernier**.
 

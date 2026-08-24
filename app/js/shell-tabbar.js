@@ -17,4 +17,11 @@
   }
 
   document.addEventListener("DOMContentLoaded", init);
+
+  /* PWA — register once from any page with tabbar */
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function () {
+      navigator.serviceWorker.register("./sw.js").catch(function () {});
+    });
+  }
 })();

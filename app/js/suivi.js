@@ -106,6 +106,33 @@
       .join("");
   }
 
+  function ankiField(s) {
+    return String(s || "").replace(/\t/g, " ").replace(/\r?\n/g, "<br>");
+  }
+
+  function exportAnkiFailed() {
+    var failed = STORE.get().failed || [];
+    if (!failed.length) {
+      alert("Aucun raté à exporter.");
+      return;
+    }
+    var lines = ["#separator:tab", "#html:true", "Front\tBack"];
+    failed.forEach(function (id) {
+      var c = cardById(id);
+      if (!c) return;
+      var back = [c.arab, c.latn, c.ex_arab, c.ex_fr].filter(Boolean).join("<br>");
+      lines.push(ankiField(c.fr) + "\t" + ankiField(back));
+    });
+    var blob = new Blob([lines.join("\n")], { type: "text/tab-separated-values;charset=utf-8" });
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "darija-rates-anki.txt";
+    a.click();
+    setTimeout(function () {
+      URL.revokeObjectURL(a.href);
+    }, 1500);
+  }
+
   function wireActions() {
     document.getElementById("btn-reset-store").addEventListener("click", function () {
       if (!confirm("Reset progrès decks + ratés ? (XP conservé)")) return;
@@ -122,6 +149,8 @@
       location.reload();
     });
     document.getElementById("btn-flash-failed").href = "./flashcards.html?mode=flemme";
+    var ankiBtn = document.getElementById("btn-anki-failed");
+    if (ankiBtn) ankiBtn.addEventListener("click", exportAnkiFailed);
   }
 
   document.addEventListener("DOMContentLoaded", function () {
