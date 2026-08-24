@@ -1,10 +1,9 @@
 # Culture — Figures
 
-Personnalités pour le small talk et la culture générale (app : `culture.html` → Figures).
+App : `culture.html` → Figures.
 
-- Cheikha Rimitti, Khaled — raï
-- Matoub Lounès — chanson kabyle
-- Warda — chanson arabe
-- Mohammed Dib, Kateb Yacine, Assia Djebar — lettres
-- Zidane, Madjer, Hassiba Boulmerka — sport
-- Émir Abdelkader, Lalla Fatma N’Soumer — histoire
+**Culture / arts / sport** : Rimitti, Khaled, Matoub, Warda, Dib, Kateb, Assia Djebar, Zidane, Madjer, Hassiba Boulmerka…
+
+**Histoire (gros volet)** : Jugurtha, Massinissa, Dihya/Kahina, Saint Augustin, Barberousse, Émir Abdelkader, Lalla Fatma N’Soumer, Bouamama, El Mokrani, Messali Hadj, Ben Boulaïd, Didouche, Ben M’hidi, Abane, Krim, Ben Bella, Boumédiène, Boudiaf, Djamila Bouhired, Hassiba Ben Bouali, Ali la Pointe, Fanon…
+
+Liste complète sync : `app/data/culture.js`.

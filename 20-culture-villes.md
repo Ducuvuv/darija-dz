@@ -1,14 +1,7 @@
 # Culture — Villes d’Algérie
 
-Repères pour parler *du* pays. Voir aussi l’app : `culture.html`.
+Repères pour parler *du* pays. App : `culture.html`.
 
-| Ville | Arabe | Latn | Note |
-| --- | --- | --- | --- |
-| Alger | الجَزَايَرْ | Dzayer | Capitale, Casbah |
-| Oran | وَهْرَانْ | Wahran | Raï, El Bahia |
-| Constantine | قُسْنْطِينَة | Qsentina | Ponts, Est |
-| Sétif | سْطِيفْ | Stif | Fouara, tics Est |
-| Annaba | عَنَّابَة | 3annaba | Littoral Est |
-| Tlemcen | تِلِمْسَانْ | Tlemsan | Andalousie |
-| Béjaïa | بَجَايَة | Bejaya | Kabylie mer |
-| Tizi Ouzou | تِيزِي وُزُّو | Tizi Wezzu | Kabylie |
+**~22 villes** : Alger, Oran, Constantine, Sétif, Annaba, Tlemcen, Béjaïa, Tizi Ouzou, Blida, Béchar, Ghardaïa, Tamanrasset, Batna, Jijel, Mostaganem, Skikda, Ouargla, Adrar, Tipaza, Bouira, Relizane…
+
+Voir `app/data/culture.js` pour arab / latn / vocab.
