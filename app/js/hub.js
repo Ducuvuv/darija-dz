@@ -60,6 +60,8 @@
         document.getElementById("today-qcm").href = links.qcm;
         var listenBtn = document.getElementById("today-listen");
         if (listenBtn) listenBtn.href = links.listen;
+        var dicteeBtn = document.getElementById("today-dictee");
+        if (dicteeBtn) dicteeBtn.href = links.dictee;
         document.getElementById("today-card").hidden = false;
 
         var failed = (STORE.get().failed || []).length;

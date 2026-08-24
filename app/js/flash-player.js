@@ -37,6 +37,15 @@
   var showLatn = true;
   var listenMode = false;
   var listenPlays = 0;
+  var dicteeMode = false;
+  var dicteeChecked = false;
+  var dicteeOk = false;
+
+  var elDicteeWrap = document.getElementById("dictee-wrap");
+  var elDicteeInput = document.getElementById("dictee-input");
+  var elDicteeFeedback = document.getElementById("dictee-feedback");
+  var elDicteeNext = document.getElementById("btn-dictee-next");
+  var elActionsNormal = document.getElementById("flash-actions-normal");
 
   function fmtTime(s) {
     var m = Math.floor(s / 60);
@@ -61,6 +70,9 @@
 
   function buildSession(deckId, mode) {
     var pool = deckId ? cardsForDeck(deckId) : (data.cards || []).slice();
+    if (dicteeMode) {
+      pool = pool.filter(function (c) { return !!(c.latn && String(c.latn).trim()); });
+    }
     if (!pool.length) return [];
 
     var ids = pool.map(function (c) { return c.id; });
@@ -100,6 +112,23 @@
     return d.innerHTML;
   }
 
+  function normalizeLatn(s) {
+    return String(s || "")
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[''`´]/g, "")
+      .replace(/[؟?!.…,;:«»""]/g, "")
+      .replace(/[ـ_–—−]/g, "-")
+      .replace(/\s*-\s*/g, "")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  function latnMatch(user, expected) {
+    return normalizeLatn(user) === normalizeLatn(expected) && normalizeLatn(expected) !== "";
+  }
+
   function speakCurrent(times) {
     var card = session[index];
     if (!card || !window.DAR_TTS) return;
@@ -113,6 +142,13 @@
   }
 
   function renderFront(card) {
+    if (dicteeMode) {
+      return (
+        '<p class="listen-prompt">Dictée · tape le latn</p>' +
+        '<p class="flash-fr">' + esc(card.fr) + "</p>" +
+        '<p class="listen-hint">Pas de peek sur le latn — 🔊 pour l’arabe</p>'
+      );
+    }
     if (listenMode) {
       return (
         '<p class="listen-prompt">Écoute · répète à voix haute</p>' +
@@ -130,6 +166,13 @@
 
   function renderBack(card) {
     var html = "";
+    if (dicteeMode) {
+      html += '<p class="latn flash-latn">' + esc(card.latn) + "</p>";
+      html += '<p class="arab flash-arab">' + esc(card.arab) + "</p>";
+      if (card.ex_fr) html += '<p class="flash-ex-fr">' + esc(card.ex_fr) + "</p>";
+      if (card.ex_arab) html += '<p class="arab flash-ex-arab">' + esc(card.ex_arab) + "</p>";
+      return html;
+    }
     if (listenMode) {
       html += '<p class="flash-fr">' + esc(card.fr) + "</p>";
       if (card.ex_fr) html += '<p class="flash-ex-fr">' + esc(card.ex_fr) + "</p>";
@@ -161,6 +204,16 @@
   }
 
   function setFlipped(on) {
+    if (dicteeMode) {
+      flipped = !!on;
+      elCard.classList.toggle("flipped", flipped);
+      elRateWrap.hidden = true;
+      elFlipBtn.textContent = "Voir la réponse";
+      elMeta.textContent = flipped
+        ? (dicteeOk ? "Correct ✓" : "Presque — regarde le latn")
+        : (elMeta.dataset.base || "Écris le latn");
+      return;
+    }
     flipped = !!on;
     elCard.classList.toggle("flipped", flipped);
     elRateWrap.hidden = !flipped;
@@ -174,13 +227,73 @@
     }
   }
 
+  function resetDicteeUI() {
+    dicteeChecked = false;
+    dicteeOk = false;
+    if (elDicteeInput) {
+      elDicteeInput.value = "";
+      elDicteeInput.disabled = false;
+    }
+    if (elDicteeFeedback) {
+      elDicteeFeedback.hidden = true;
+      elDicteeFeedback.innerHTML = "";
+      elDicteeFeedback.className = "dictee-feedback";
+    }
+    if (elDicteeNext) elDicteeNext.hidden = true;
+    var checkBtn = document.getElementById("btn-dictee-check");
+    if (checkBtn) checkBtn.hidden = false;
+  }
+
+  function syncModeChrome() {
+    if (elDicteeWrap) elDicteeWrap.hidden = !dicteeMode;
+    if (elActionsNormal) elActionsNormal.hidden = !!dicteeMode;
+    elCard.classList.toggle("dictee-card", !!dicteeMode);
+    elCard.setAttribute("role", dicteeMode ? "group" : "button");
+  }
+
+  function checkDictee() {
+    var card = session[index];
+    if (!card || dicteeChecked) return;
+    var user = elDicteeInput ? elDicteeInput.value : "";
+    dicteeOk = latnMatch(user, card.latn);
+    dicteeChecked = true;
+    if (elDicteeInput) elDicteeInput.disabled = true;
+    var checkBtn = document.getElementById("btn-dictee-check");
+    if (checkBtn) checkBtn.hidden = true;
+
+    if (elDicteeFeedback) {
+      elDicteeFeedback.hidden = false;
+      elDicteeFeedback.className = "dictee-feedback " + (dicteeOk ? "ok" : "fail");
+      elDicteeFeedback.innerHTML = dicteeOk
+        ? "<strong>Correct</strong> — nice."
+        : "<strong>Raté</strong> · attendu : <span class=\"latn\">" + esc(card.latn) + "</span>";
+    }
+    if (elDicteeNext) elDicteeNext.hidden = false;
+    setFlipped(true);
+    if (window.DAR_TTS) speakCurrent(1);
+  }
+
+  function continueDictee() {
+    rate(dicteeOk ? "good" : "again");
+  }
+
   function renderCard() {
     var card = session[index];
     if (!card) return;
     elFront.innerHTML = renderFront(card);
     elBack.innerHTML = renderBack(card);
-    elMeta.dataset.base = card.id + " · " + card.niv + (listenMode ? " · écoute" : " · tape pour retourner");
+    var modeLabel = dicteeMode ? " · dictée" : listenMode ? " · écoute" : " · tape pour retourner";
+    elMeta.dataset.base = card.id + " · " + card.niv + modeLabel;
     elProgress.textContent = index + 1 + " / " + session.length;
+    syncModeChrome();
+    if (dicteeMode) {
+      resetDicteeUI();
+      setFlipped(false);
+      setTimeout(function () {
+        if (elDicteeInput) elDicteeInput.focus();
+      }, 80);
+      return;
+    }
     setFlipped(false);
     if (listenMode) {
       listenPlays = 0;
@@ -189,6 +302,7 @@
   }
 
   function flip() {
+    if (dicteeMode) return;
     if (DAR) DAR.sfx.click();
     setFlipped(!flipped);
   }
@@ -265,13 +379,15 @@
     var mode = modeParam === "flemme" ? "flemme" : "normal";
     var settings = STORE.get().settings || {};
     var listenCheck = document.getElementById("mode-listen");
-    listenMode = modeParam === "listen" || (listenCheck && listenCheck.checked);
+    var dicteeCheck = document.getElementById("mode-dictee");
+    dicteeMode = modeParam === "dictee" || modeParam === "dictation" || (dicteeCheck && dicteeCheck.checked);
+    listenMode = !dicteeMode && (modeParam === "listen" || (listenCheck && listenCheck.checked));
 
     sessionMax = mode === "flemme" ? (settings.flemmeMax || 5) : (settings.sessionMax || 8);
     var minutes = mode === "flemme" ? (settings.flemmeMinutes || 2) : (settings.sessionMinutes || 5);
     showLatn = settings.showLatn !== false;
     var reverseCheck = document.getElementById("mode-reverse");
-    if (listenMode) {
+    if (listenMode || dicteeMode) {
       reverse = false;
     } else if (modeParam === "reverse" || (reverseCheck && reverseCheck.checked)) {
       reverse = true;
@@ -283,7 +399,7 @@
 
     session = buildSession(deckId, mode);
     if (!session.length) {
-      alert("Aucune carte pour ce deck.");
+      alert(dicteeMode ? "Aucune carte avec latn pour ce deck." : "Aucune carte pour ce deck.");
       return;
     }
 
@@ -314,13 +430,16 @@
     var modeFlemme = document.getElementById("mode-flemme");
     var modeReverse = document.getElementById("mode-reverse");
     var modeListen = document.getElementById("mode-listen");
+    var modeDictee = document.getElementById("mode-dictee");
     if (modeFlemme) modeFlemme.checked = modeParam === "flemme";
     if (modeReverse) modeReverse.checked = modeParam === "reverse";
     if (modeListen) modeListen.checked = modeParam === "listen";
+    if (modeDictee) modeDictee.checked = modeParam === "dictee" || modeParam === "dictation";
 
     document.getElementById("btn-start").addEventListener("click", function () {
       deckParam = elDeckSelect.value || null;
       if (modeFlemme && modeFlemme.checked) modeParam = "flemme";
+      else if (modeDictee && modeDictee.checked) modeParam = "dictee";
       else if (modeListen && modeListen.checked) modeParam = "listen";
       else if (modeReverse && modeReverse.checked) modeParam = "reverse";
       else modeParam = "normal";
@@ -330,10 +449,12 @@
 
   function wirePlay() {
     elCard.addEventListener("click", function (e) {
-      if (e.target.closest(".flash-actions") || e.target.closest("#btn-speak")) return;
+      if (dicteeMode) return;
+      if (e.target.closest(".flash-actions") || e.target.closest("#btn-speak") || e.target.closest("#dictee-wrap")) return;
       flip();
     });
     elCard.addEventListener("keydown", function (e) {
+      if (dicteeMode) return;
       if (e.key === "Enter" || e.key === " ") {
         e.preventDefault();
         flip();
@@ -345,6 +466,25 @@
       btnSpeak.addEventListener("click", function (e) {
         e.stopPropagation();
         speakCurrent();
+      });
+    }
+    var btnDicteeSpeak = document.getElementById("btn-dictee-speak");
+    if (btnDicteeSpeak) {
+      btnDicteeSpeak.addEventListener("click", function (e) {
+        e.stopPropagation();
+        speakCurrent();
+      });
+    }
+    var btnDicteeCheck = document.getElementById("btn-dictee-check");
+    if (btnDicteeCheck) btnDicteeCheck.addEventListener("click", checkDictee);
+    if (elDicteeNext) elDicteeNext.addEventListener("click", continueDictee);
+    if (elDicteeInput) {
+      elDicteeInput.addEventListener("keydown", function (e) {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          if (dicteeChecked) continueDictee();
+          else checkDictee();
+        }
       });
     }
     document.getElementById("btn-ok").addEventListener("click", function () { rate("good"); });

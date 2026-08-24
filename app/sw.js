@@ -1,5 +1,5 @@
 /* Darija DZ — offline shell + corpus */
-var CACHE = "darija-dz-v3";
+var CACHE = "darija-dz-v4";
 var ASSETS = [
   "./",
   "./index.html",
