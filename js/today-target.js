@@ -115,6 +115,7 @@
       qcm: "./qcm-player.html?deck=" + q,
       flemme: "./flashcards.html?deck=" + q + "&mode=flemme",
       listen: "./flashcards.html?deck=" + q + "&mode=listen",
+      dictee: "./flashcards.html?deck=" + q + "&mode=dictee",
     };
   }
 
