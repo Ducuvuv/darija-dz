@@ -192,7 +192,7 @@ Comme une **fiche biochimie** mais pour un deck langue :
 | 3 | PWA offline (service worker) | **fait** |
 | 4 | Export Anki CSV (ratés) | **fait** |
 | 5 | Encore + phrases orales (lots) | continu |
-| 6 | Mode dictée latn | **fait** |
+| 6 | Mode dictée latn + **clavier arabe** | **fait** |
 | 7 | Paires/contrasts forcés | à faire |
 | 8 | Dialogues rôle A/B + pause | à faire |
 | **FIN** | **Culture DZ + cours complets** | **en dernier** |

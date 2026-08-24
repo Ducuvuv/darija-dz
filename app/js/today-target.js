@@ -116,6 +116,7 @@
       flemme: "./flashcards.html?deck=" + q + "&mode=flemme",
       listen: "./flashcards.html?deck=" + q + "&mode=listen",
       dictee: "./flashcards.html?deck=" + q + "&mode=dictee",
+      typing: "./flashcards.html?deck=" + q + "&mode=typing",
     };
   }
 

@@ -38,6 +38,7 @@
   var listenMode = false;
   var listenPlays = 0;
   var dicteeMode = false;
+  var typingMode = false;
   var dicteeChecked = false;
   var dicteeOk = false;
 
@@ -45,7 +46,14 @@
   var elDicteeInput = document.getElementById("dictee-input");
   var elDicteeFeedback = document.getElementById("dictee-feedback");
   var elDicteeNext = document.getElementById("btn-dictee-next");
+  var elDicteeLabel = document.getElementById("dictee-label");
+  var elDicteeTip = document.getElementById("dictee-tip");
+  var elTypingLive = document.getElementById("typing-live");
   var elActionsNormal = document.getElementById("flash-actions-normal");
+
+  function isTypeMode() {
+    return dicteeMode || typingMode;
+  }
 
   function fmtTime(s) {
     var m = Math.floor(s / 60);
@@ -72,6 +80,9 @@
     var pool = deckId ? cardsForDeck(deckId) : (data.cards || []).slice();
     if (dicteeMode) {
       pool = pool.filter(function (c) { return !!(c.latn && String(c.latn).trim()); });
+    }
+    if (typingMode) {
+      pool = pool.filter(function (c) { return !!(c.arab && String(c.arab).trim()); });
     }
     if (!pool.length) return [];
 
@@ -129,6 +140,31 @@
     return normalizeLatn(user) === normalizeLatn(expected) && normalizeLatn(expected) !== "";
   }
 
+  function normalizeArab(s) {
+    return String(s || "")
+      .replace(/[\u064B-\u065F\u0670\u06D6-\u06ED]/g, "")
+      .replace(/\u0640/g, "")
+      .replace(/[إأآٱ]/g, "ا")
+      .replace(/ة/g, "ه")
+      .replace(/ى/g, "ي")
+      .replace(/[؟?!.…,;:«»""]/g, "")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  function arabMatch(user, expected) {
+    return normalizeArab(user) === normalizeArab(expected) && normalizeArab(expected) !== "";
+  }
+
+  function expectedTypeTarget(card) {
+    return typingMode ? card.arab : card.latn;
+  }
+
+  function typeMatch(user, card) {
+    if (typingMode) return arabMatch(user, card.arab);
+    return latnMatch(user, card.latn);
+  }
+
   function speakCurrent(times) {
     var card = session[index];
     if (!card || !window.DAR_TTS) return;
@@ -142,6 +178,14 @@
   }
 
   function renderFront(card) {
+    if (typingMode) {
+      return (
+        '<p class="listen-prompt">Clavier arabe · retape le texte</p>' +
+        '<p class="arab flash-arab typing-model">' + esc(card.arab) + "</p>" +
+        '<p class="flash-fr typing-fr">' + esc(card.fr) + "</p>" +
+        '<p class="listen-hint">Recopie en arabe · voyelles (َ ِ ُ) optionnelles</p>'
+      );
+    }
     if (dicteeMode) {
       return (
         '<p class="listen-prompt">Dictée · tape le latn</p>' +
@@ -166,9 +210,14 @@
 
   function renderBack(card) {
     var html = "";
-    if (dicteeMode) {
-      html += '<p class="latn flash-latn">' + esc(card.latn) + "</p>";
-      html += '<p class="arab flash-arab">' + esc(card.arab) + "</p>";
+    if (typingMode || dicteeMode) {
+      if (typingMode) {
+        html += '<p class="arab flash-arab">' + esc(card.arab) + "</p>";
+        if (card.latn) html += '<p class="latn flash-latn">' + esc(card.latn) + "</p>";
+      } else {
+        html += '<p class="latn flash-latn">' + esc(card.latn) + "</p>";
+        html += '<p class="arab flash-arab">' + esc(card.arab) + "</p>";
+      }
       if (card.ex_fr) html += '<p class="flash-ex-fr">' + esc(card.ex_fr) + "</p>";
       if (card.ex_arab) html += '<p class="arab flash-ex-arab">' + esc(card.ex_arab) + "</p>";
       return html;
@@ -204,14 +253,14 @@
   }
 
   function setFlipped(on) {
-    if (dicteeMode) {
+    if (isTypeMode()) {
       flipped = !!on;
       elCard.classList.toggle("flipped", flipped);
       elRateWrap.hidden = true;
       elFlipBtn.textContent = "Voir la réponse";
       elMeta.textContent = flipped
-        ? (dicteeOk ? "Correct ✓" : "Presque — regarde le latn")
-        : (elMeta.dataset.base || "Écris le latn");
+        ? (dicteeOk ? "Correct ✓" : "Presque — regarde la correction")
+        : (elMeta.dataset.base || (typingMode ? "Retape l’arabe" : "Écris le latn"));
       return;
     }
     flipped = !!on;
@@ -233,6 +282,7 @@
     if (elDicteeInput) {
       elDicteeInput.value = "";
       elDicteeInput.disabled = false;
+      elDicteeInput.classList.remove("ok", "bad", "partial");
     }
     if (elDicteeFeedback) {
       elDicteeFeedback.hidden = true;
@@ -242,33 +292,93 @@
     if (elDicteeNext) elDicteeNext.hidden = true;
     var checkBtn = document.getElementById("btn-dictee-check");
     if (checkBtn) checkBtn.hidden = false;
+    if (elTypingLive) {
+      elTypingLive.hidden = !typingMode;
+      elTypingLive.innerHTML = "";
+      elTypingLive.className = "typing-live";
+    }
+    prepareTypeChrome();
+    updateTypingLive();
+  }
+
+  function prepareTypeChrome() {
+    if (!elDicteeInput) return;
+    if (typingMode) {
+      if (elDicteeLabel) elDicteeLabel.textContent = "Écris en arabe";
+      elDicteeInput.dir = "rtl";
+      elDicteeInput.lang = "ar";
+      elDicteeInput.placeholder = "اكتب هنا…";
+      elDicteeInput.classList.add("arab-input");
+      if (elDicteeTip) elDicteeTip.hidden = false;
+    } else {
+      if (elDicteeLabel) elDicteeLabel.textContent = "Écris en latn";
+      elDicteeInput.dir = "ltr";
+      elDicteeInput.lang = "fr";
+      elDicteeInput.placeholder = "ex. salam 3likoum";
+      elDicteeInput.classList.remove("arab-input");
+      if (elDicteeTip) elDicteeTip.hidden = true;
+    }
   }
 
   function syncModeChrome() {
-    if (elDicteeWrap) elDicteeWrap.hidden = !dicteeMode;
-    if (elActionsNormal) elActionsNormal.hidden = !!dicteeMode;
-    elCard.classList.toggle("dictee-card", !!dicteeMode);
-    elCard.setAttribute("role", dicteeMode ? "group" : "button");
+    if (elDicteeWrap) elDicteeWrap.hidden = !isTypeMode();
+    if (elActionsNormal) elActionsNormal.hidden = !!isTypeMode();
+    elCard.classList.toggle("dictee-card", !!isTypeMode());
+    elCard.setAttribute("role", isTypeMode() ? "group" : "button");
+  }
+
+  function updateTypingLive() {
+    if (!typingMode || !elTypingLive || dicteeChecked) return;
+    var card = session[index];
+    if (!card) return;
+    var target = normalizeArab(card.arab);
+    var user = normalizeArab(elDicteeInput ? elDicteeInput.value : "");
+    var okLen = 0;
+    while (okLen < user.length && okLen < target.length && user.charAt(okLen) === target.charAt(okLen)) {
+      okLen += 1;
+    }
+    var wrong = user.length > okLen;
+    var done = user.length > 0 && user === target;
+    var pct = target.length ? Math.round((okLen / target.length) * 100) : 0;
+    elTypingLive.hidden = false;
+    elTypingLive.removeAttribute("dir");
+    elTypingLive.lang = "fr";
+    elTypingLive.className = "typing-live" + (wrong ? " bad" : done ? " ok" : "");
+    elTypingLive.innerHTML =
+      '<span class="typing-meter"><i style="width:' + pct + '%"></i></span>' +
+      '<span class="typing-count">' + okLen + " / " + target.length +
+      (wrong ? " · erreur" : done ? " · ✓" : "") + "</span>";
+    if (elDicteeInput) {
+      elDicteeInput.classList.toggle("ok", done);
+      elDicteeInput.classList.toggle("bad", wrong);
+      elDicteeInput.classList.toggle("partial", !wrong && user.length > 0 && !done);
+    }
   }
 
   function checkDictee() {
     var card = session[index];
     if (!card || dicteeChecked) return;
     var user = elDicteeInput ? elDicteeInput.value : "";
-    dicteeOk = latnMatch(user, card.latn);
+    dicteeOk = typeMatch(user, card);
     dicteeChecked = true;
     if (elDicteeInput) elDicteeInput.disabled = true;
     var checkBtn = document.getElementById("btn-dictee-check");
     if (checkBtn) checkBtn.hidden = true;
+
+    var expected = expectedTypeTarget(card);
+    var expectedHtml = typingMode
+      ? '<span class="arab">' + esc(expected) + "</span>"
+      : '<span class="latn">' + esc(expected) + "</span>";
 
     if (elDicteeFeedback) {
       elDicteeFeedback.hidden = false;
       elDicteeFeedback.className = "dictee-feedback " + (dicteeOk ? "ok" : "fail");
       elDicteeFeedback.innerHTML = dicteeOk
         ? "<strong>Correct</strong> — nice."
-        : "<strong>Raté</strong> · attendu : <span class=\"latn\">" + esc(card.latn) + "</span>";
+        : "<strong>Raté</strong> · attendu : " + expectedHtml;
     }
     if (elDicteeNext) elDicteeNext.hidden = false;
+    if (elTypingLive) elTypingLive.hidden = true;
     setFlipped(true);
     if (window.DAR_TTS) speakCurrent(1);
   }
@@ -282,11 +392,17 @@
     if (!card) return;
     elFront.innerHTML = renderFront(card);
     elBack.innerHTML = renderBack(card);
-    var modeLabel = dicteeMode ? " · dictée" : listenMode ? " · écoute" : " · tape pour retourner";
+    var modeLabel = typingMode
+      ? " · clavier arabe"
+      : dicteeMode
+        ? " · dictée"
+        : listenMode
+          ? " · écoute"
+          : " · tape pour retourner";
     elMeta.dataset.base = card.id + " · " + card.niv + modeLabel;
     elProgress.textContent = index + 1 + " / " + session.length;
     syncModeChrome();
-    if (dicteeMode) {
+    if (isTypeMode()) {
       resetDicteeUI();
       setFlipped(false);
       setTimeout(function () {
@@ -302,7 +418,7 @@
   }
 
   function flip() {
-    if (dicteeMode) return;
+    if (isTypeMode()) return;
     if (DAR) DAR.sfx.click();
     setFlipped(!flipped);
   }
@@ -380,14 +496,16 @@
     var settings = STORE.get().settings || {};
     var listenCheck = document.getElementById("mode-listen");
     var dicteeCheck = document.getElementById("mode-dictee");
-    dicteeMode = modeParam === "dictee" || modeParam === "dictation" || (dicteeCheck && dicteeCheck.checked);
-    listenMode = !dicteeMode && (modeParam === "listen" || (listenCheck && listenCheck.checked));
+    var typingCheck = document.getElementById("mode-typing");
+    typingMode = modeParam === "typing" || modeParam === "arabe" || (typingCheck && typingCheck.checked);
+    dicteeMode = !typingMode && (modeParam === "dictee" || modeParam === "dictation" || (dicteeCheck && dicteeCheck.checked));
+    listenMode = !typingMode && !dicteeMode && (modeParam === "listen" || (listenCheck && listenCheck.checked));
 
     sessionMax = mode === "flemme" ? (settings.flemmeMax || 5) : (settings.sessionMax || 8);
     var minutes = mode === "flemme" ? (settings.flemmeMinutes || 2) : (settings.sessionMinutes || 5);
     showLatn = settings.showLatn !== false;
     var reverseCheck = document.getElementById("mode-reverse");
-    if (listenMode || dicteeMode) {
+    if (listenMode || dicteeMode || typingMode) {
       reverse = false;
     } else if (modeParam === "reverse" || (reverseCheck && reverseCheck.checked)) {
       reverse = true;
@@ -399,7 +517,10 @@
 
     session = buildSession(deckId, mode);
     if (!session.length) {
-      alert(dicteeMode ? "Aucune carte avec latn pour ce deck." : "Aucune carte pour ce deck.");
+      var msg = "Aucune carte pour ce deck.";
+      if (dicteeMode) msg = "Aucune carte avec latn pour ce deck.";
+      if (typingMode) msg = "Aucune carte avec arabe pour ce deck.";
+      alert(msg);
       return;
     }
 
@@ -431,14 +552,17 @@
     var modeReverse = document.getElementById("mode-reverse");
     var modeListen = document.getElementById("mode-listen");
     var modeDictee = document.getElementById("mode-dictee");
+    var modeTyping = document.getElementById("mode-typing");
     if (modeFlemme) modeFlemme.checked = modeParam === "flemme";
     if (modeReverse) modeReverse.checked = modeParam === "reverse";
     if (modeListen) modeListen.checked = modeParam === "listen";
     if (modeDictee) modeDictee.checked = modeParam === "dictee" || modeParam === "dictation";
+    if (modeTyping) modeTyping.checked = modeParam === "typing" || modeParam === "arabe";
 
     document.getElementById("btn-start").addEventListener("click", function () {
       deckParam = elDeckSelect.value || null;
       if (modeFlemme && modeFlemme.checked) modeParam = "flemme";
+      else if (modeTyping && modeTyping.checked) modeParam = "typing";
       else if (modeDictee && modeDictee.checked) modeParam = "dictee";
       else if (modeListen && modeListen.checked) modeParam = "listen";
       else if (modeReverse && modeReverse.checked) modeParam = "reverse";
@@ -449,12 +573,12 @@
 
   function wirePlay() {
     elCard.addEventListener("click", function (e) {
-      if (dicteeMode) return;
+      if (isTypeMode()) return;
       if (e.target.closest(".flash-actions") || e.target.closest("#btn-speak") || e.target.closest("#dictee-wrap")) return;
       flip();
     });
     elCard.addEventListener("keydown", function (e) {
-      if (dicteeMode) return;
+      if (isTypeMode()) return;
       if (e.key === "Enter" || e.key === " ") {
         e.preventDefault();
         flip();
@@ -485,6 +609,9 @@
           if (dicteeChecked) continueDictee();
           else checkDictee();
         }
+      });
+      elDicteeInput.addEventListener("input", function () {
+        if (typingMode && !dicteeChecked) updateTypingLive();
       });
     }
     document.getElementById("btn-ok").addEventListener("click", function () { rate("good"); });
