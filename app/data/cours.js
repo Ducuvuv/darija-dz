@@ -177,6 +177,8 @@ window.DAR_COURS = [
         situations: ["Dire ce que tu fais / veux / peux"],
         checklist: ["n7ebb", "nqder", "na3raf", "nemchi"],
         practice: [
+          { label: "★ Conjugaison complète", href: "./conjugaison.html" },
+          { label: "Drill conjugaison", href: "./conjugaison.html?panel=drill" },
           { label: "Page verbes", href: "./verbes.html" },
           { label: "Clavier arabe", href: "./flashcards.html?mode=typing" },
         ],

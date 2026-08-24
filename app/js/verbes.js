@@ -38,6 +38,7 @@
           '<section class="deck-panel verb-block" id="' + esc(v.id) + '">' +
           '<h3><span class="verb-num">' + v.num + ".</span> " + esc(v.title) + ' <span class="arab verb-head">' + esc(v.arab) + "</span></h3>" +
           tables +
+          '<a class="btn secondary btn-sm" href="./conjugaison.html">Conjugaison complète</a> ' +
           '<a class="btn secondary btn-sm" href="./flashcards.html?deck=02-deck-7">Verbes en flash</a>' +
           "</section>"
         );
