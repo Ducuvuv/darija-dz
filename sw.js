@@ -1,5 +1,5 @@
 /* Darija DZ — offline shell + corpus */
-var CACHE = "darija-dz-v8";
+var CACHE = "darija-dz-v9";
 var ASSETS = [
   "./",
   "./index.html",
@@ -9,6 +9,7 @@ var ASSETS = [
   "./suivi.html",
   "./phrases.html",
   "./verbes.html",
+  "./conjugaison.html",
   "./paires.html",
   "./culture.html",
   "./cours.html",
@@ -21,6 +22,7 @@ var ASSETS = [
   "./data/pairs.js",
   "./data/culture.js",
   "./data/cours.js",
+  "./data/conjugaison.js",
   "./js/engine.js",
   "./js/store.js",
   "./js/flash-srs.js",
@@ -35,6 +37,7 @@ var ASSETS = [
   "./js/qcm-player.js",
   "./js/phrases.js",
   "./js/verbes.js",
+  "./js/conjugaison.js",
   "./js/tts.js",
   "./js/paires.js",
   "./js/culture.js",

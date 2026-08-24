@@ -1151,6 +1151,36 @@ a:hover { color: var(--accent-2); }
   margin: 0 0 0.45rem;
 }
 
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0.5rem 0 0.75rem;
+}
+.conj-tip {
+  margin: 0.35rem 0 0.5rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+.conj-note {
+  margin: 0 0 0.55rem;
+  padding: 0.55rem 0.7rem;
+  border-radius: 10px;
+  background: rgba(217, 119, 6, 0.12);
+  border: 1px solid rgba(217, 119, 6, 0.25);
+  font-size: 0.88rem;
+}
+.conj-imp {
+  margin: 0 0 0.65rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.conj-full td:last-child {
+  font-size: 1.35rem;
+  text-align: right;
+}
+.conj-panel { margin-top: 0.25rem; }
+
 .dialogue-player {
   position: sticky;
   bottom: calc(var(--tabbar-h) + 0.5rem);
