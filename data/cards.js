@@ -1,12 +1,12 @@
 /* AUTO-GENERATED — python scripts/build-data.py */
 window.DAR_DATA = {
   "meta": {
-    "generated": "2026-08-24T22:50:00.208194+00:00",
+    "generated": "2026-08-25T22:51:10.292207+00:00",
     "version": 1,
     "stats": {
-      "cards": 2116,
+      "cards": 2130,
       "decks": 125,
-      "words": 1236,
+      "words": 1250,
       "idioms": 180,
       "phrases": 700,
       "verbs": 12,
@@ -113,7 +113,7 @@ window.DAR_DATA = {
       "niv": "A1",
       "kind": "word",
       "bonus": false,
-      "count": 22
+      "count": 36
     },
     {
       "id": "02-deck-5",
@@ -2221,6 +2221,216 @@ window.DAR_DATA = {
       "tags": [
         "dz",
         "possession"
+      ]
+    },
+    {
+      "id": "DZ-112",
+      "deck": "02-deck-4",
+      "type": "word",
+      "fr": "devant",
+      "arab": "قُدَّامْ",
+      "latn": "qoddam",
+      "ex_arab": "قُدَّامْ الْجَامِعْ",
+      "ex_fr": "devant la mosquée",
+      "niv": "A1",
+      "tags": [
+        "dz",
+        "lieu"
+      ]
+    },
+    {
+      "id": "DZ-113",
+      "deck": "02-deck-4",
+      "type": "word",
+      "fr": "derrière",
+      "arab": "مُورْ",
+      "latn": "mor",
+      "ex_arab": "مُورْ الدَّارْ",
+      "ex_fr": "derrière la maison",
+      "niv": "A1",
+      "tags": [
+        "dz",
+        "lieu"
+      ]
+    },
+    {
+      "id": "DZ-114",
+      "deck": "02-deck-4",
+      "type": "word",
+      "fr": "à côté",
+      "arab": "حْدَا",
+      "latn": "7da",
+      "ex_arab": "قْعُدْ حْدَايَا",
+      "ex_fr": "assieds-toi à côté de moi",
+      "niv": "A1",
+      "tags": [
+        "dz",
+        "lieu"
+      ]
+    },
+    {
+      "id": "DZ-115",
+      "deck": "02-deck-4",
+      "type": "word",
+      "fr": "entre",
+      "arab": "بِينْ",
+      "latn": "bin",
+      "ex_arab": "بِينْ جَزَايْرْ و وَهْرَانْ",
+      "ex_fr": "entre Alger et Oran",
+      "niv": "A1",
+      "tags": [
+        "dz",
+        "lieu"
+      ]
+    },
+    {
+      "id": "DZ-116",
+      "deck": "02-deck-4",
+      "type": "word",
+      "fr": "sans",
+      "arab": "بْلَا",
+      "latn": "bla",
+      "ex_arab": "بْلَا سُكَّرْ",
+      "ex_fr": "sans sucre",
+      "niv": "A1",
+      "tags": [
+        "dz",
+        "prep"
+      ]
+    },
+    {
+      "id": "DZ-117",
+      "deck": "02-deck-4",
+      "type": "word",
+      "fr": "avant",
+      "arab": "قْبَلْ",
+      "latn": "qbel",
+      "ex_arab": "قْبَلْ الْعْشَا",
+      "ex_fr": "avant le dîner",
+      "niv": "A1",
+      "tags": [
+        "dz",
+        "temps"
+      ]
+    },
+    {
+      "id": "DZ-118",
+      "deck": "02-deck-4",
+      "type": "word",
+      "fr": "après",
+      "arab": "بَعْدْ",
+      "latn": "ba3d",
+      "ex_arab": "بَعْدْ الصَّلَاة",
+      "ex_fr": "après la prière",
+      "niv": "A1",
+      "tags": [
+        "dz",
+        "temps"
+      ]
+    },
+    {
+      "id": "DZ-119",
+      "deck": "02-deck-4",
+      "type": "word",
+      "fr": "de / depuis",
+      "arab": "مِنْ",
+      "latn": "mn",
+      "ex_arab": "مِنْ وَهْرَانْ",
+      "ex_fr": "de Oran",
+      "niv": "A1",
+      "tags": [
+        "dz",
+        "prep"
+      ]
+    },
+    {
+      "id": "DZ-120",
+      "deck": "02-deck-4",
+      "type": "word",
+      "fr": "à / vers",
+      "arab": "لـ / لِـ",
+      "latn": "l / lel",
+      "ex_arab": "نْرُوحْ لِلسُّوقْ",
+      "ex_fr": "je vais au marché",
+      "niv": "A1",
+      "tags": [
+        "dz",
+        "prep"
+      ]
+    },
+    {
+      "id": "DZ-121",
+      "deck": "02-deck-4",
+      "type": "word",
+      "fr": "dans",
+      "arab": "فِي",
+      "latn": "fi",
+      "ex_arab": "فِي الدَّارْ",
+      "ex_fr": "dans la maison",
+      "niv": "A1",
+      "tags": [
+        "dz",
+        "prep"
+      ]
+    },
+    {
+      "id": "DZ-122",
+      "deck": "02-deck-4",
+      "type": "word",
+      "fr": "sur",
+      "arab": "عَلَى",
+      "latn": "3la",
+      "ex_arab": "عَلَى الطَّرِيقْ",
+      "ex_fr": "sur la route",
+      "niv": "A1",
+      "tags": [
+        "dz",
+        "prep"
+      ]
+    },
+    {
+      "id": "DZ-123",
+      "deck": "02-deck-4",
+      "type": "word",
+      "fr": "chez",
+      "arab": "عِنْد",
+      "latn": "3nd",
+      "ex_arab": "عِنْدَكْ",
+      "ex_fr": "chez toi",
+      "niv": "A1",
+      "tags": [
+        "dz",
+        "prep"
+      ]
+    },
+    {
+      "id": "DZ-124",
+      "deck": "02-deck-4",
+      "type": "word",
+      "fr": "par / avec (moyen)",
+      "arab": "بِ",
+      "latn": "b",
+      "ex_arab": "بِالْعَرَبِيَّة",
+      "ex_fr": "en arabe",
+      "niv": "A1",
+      "tags": [
+        "dz",
+        "prep"
+      ]
+    },
+    {
+      "id": "DZ-125",
+      "deck": "02-deck-4",
+      "type": "word",
+      "fr": "parce que",
+      "arab": "خَاطَر",
+      "latn": "khater",
+      "ex_arab": "خَاطَرْ مَا عَنْدِيشْ وَقْتْ",
+      "ex_fr": "parce que j’ai pas le temps",
+      "niv": "A1",
+      "tags": [
+        "dz",
+        "prep"
       ]
     },
     {
@@ -5069,9 +5279,9 @@ window.DAR_DATA = {
       "deck": "06-motions-tats-psychologiques",
       "type": "word",
       "fr": "soulagé",
-      "arab": "مْفَرَّح",
-      "latn": "mfar7",
-      "ex_arab": "رَانِي مْفَرَّح",
+      "arab": "رَايِح",
+      "latn": "rayeh",
+      "ex_arab": "رَانِي رَايِح",
       "ex_fr": "Je suis soulagé",
       "niv": "B1",
       "tags": [
@@ -5155,7 +5365,7 @@ window.DAR_DATA = {
       "fr": "surpris",
       "arab": "مْدَهْش",
       "latn": "mdehch",
-      "ex_arab": "تْعَبْلِت!",
+      "ex_arab": "رَانِي مْدَهْش!",
       "ex_fr": "J’ai été surpris !",
       "niv": "A2",
       "tags": [
@@ -8149,10 +8359,10 @@ window.DAR_DATA = {
       "deck": "06-relations-famille",
       "type": "word",
       "fr": "cousin(e)",
-      "arab": "عَمّ / خَالَة",
-      "latn": "3amm",
-      "ex_arab": "عَمِّي",
-      "ex_fr": "Mon oncle",
+      "arab": "وَلَدْ عَمّ / بِنْتْ عَمّ",
+      "latn": "wled 3amm / bent 3amm",
+      "ex_arab": "وَلَدْ عَمِّي",
+      "ex_fr": "Mon cousin",
       "niv": "A2",
       "tags": [
         "famille"
