@@ -307,9 +307,4 @@ window.DAR_CONJ = {
     negPast: ["مَا نْعَسْتْشْ", "مَا نْعَسْتْشْ", "مَا نْعَسْتِيشْ", "مَا نْعَسْشْ", "مَا نَعْسَتْشْ", "مَا نْعَسْنَاشْ", "مَا نْعَسْتُوشْ", "مَا نَعْسُوشْ"],
   });
 
-  /* fix typo in tenses id */
-  C.tenses = C.tenses.map(function (t) {
-    if (t.id === " progressive") t.id = "progressive";
-    return t;
-  });
 })(window.DAR_CONJ);

@@ -143,8 +143,22 @@ Sessions : **8–12 cartes**. Un deck = une section.
 | DZ-109 | en bas | تَحْتْ | ta7t | هْبَطْ تَحْتْ | descends | A1 | dz, lieu |
 | DZ-110 | avec | مْعَا | m3a | مْعَا صْحَابِي | avec mes amis | A1 | dz, prep |
 | DZ-111 | de (possession) | تَاعْ | ta3 | الْكْتَابْ تَاعِي | mon livre | A1 | dz, possession |
+| DZ-112 | devant | قُدَّامْ | qoddam | قُدَّامْ الْجَامِعْ | devant la mosquée | A1 | dz, lieu |
+| DZ-113 | derrière | مُورْ | mor | مُورْ الدَّارْ | derrière la maison | A1 | dz, lieu |
+| DZ-114 | à côté | حْدَا | 7da | قْعُدْ حْدَايَا | assieds-toi à côté de moi | A1 | dz, lieu |
+| DZ-115 | entre | بِينْ | bin | بِينْ جَزَايْرْ و وَهْرَانْ | entre Alger et Oran | A1 | dz, lieu |
+| DZ-116 | sans | بْلَا | bla | بْلَا سُكَّرْ | sans sucre | A1 | dz, prep |
+| DZ-117 | avant | قْبَلْ | qbel | قْبَلْ الْعْشَا | avant le dîner | A1 | dz, temps |
+| DZ-118 | après | بَعْدْ | ba3d | بَعْدْ الصَّلَاة | après la prière | A1 | dz, temps |
+| DZ-119 | de / depuis | مِنْ | mn | مِنْ وَهْرَانْ | de Oran | A1 | dz, prep |
+| DZ-120 | à / vers | لـ / لِـ | l / lel | نْرُوحْ لِلسُّوقْ | je vais au marché | A1 | dz, prep |
+| DZ-121 | dans | فِي | fi | فِي الدَّارْ | dans la maison | A1 | dz, prep |
+| DZ-122 | sur | عَلَى | 3la | عَلَى الطَّرِيقْ | sur la route | A1 | dz, prep |
+| DZ-123 | chez | عِنْد | 3nd | عِنْدَكْ | chez toi | A1 | dz, prep |
+| DZ-124 | par / avec (moyen) | بِ | b | بِالْعَرَبِيَّة | en arabe | A1 | dz, prep |
+| DZ-125 | parce que | خَاطَر | khater | خَاطَرْ مَا عَنْدِيشْ وَقْتْ | parce que j’ai pas le temps | A1 | dz, prep |
 
-**Paires :** رَاكْ/رَاكِي · هْنَا/لْهِيهْ · فُوقْ/تَحْتْ
+**Paires :** رَاكْ/رَاكِي · هْنَا/لْهِيهْ · فُوقْ/تَحْتْ · مِنْ/لِـ · فِي/عَلَى · مْعَا/بْلَا
 
 ### Mini-exos 4
 

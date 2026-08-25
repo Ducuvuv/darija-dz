@@ -17,13 +17,13 @@ Format fiche : **fr** → **arab** (voyellisé) + **latn** + exemples.
 | DZ-514 | déçu | مْدَبُّو | mdebbou | رَانِي مْدَبُّو | Je suis déçu | A2 | emotion |
 | DZ-515 | honte (sociale) | حَشُومَة | 7choma | هَذِي حَشُومَة | C’est honteux | A2 | emotion |
 | DZ-516 | fierté | نِيف | nif | عَنْدُو النِّيف | Il a de la fierté | B1 | emotion |
-| DZ-517 | soulagé | مْفَرَّح | mfar7 | رَانِي مْفَرَّح | Je suis soulagé | B1 | emotion |
+| DZ-517 | soulagé | رَايِح | rayeh | رَانِي رَايِح | Je suis soulagé | B1 | emotion |
 | DZ-518 | triste / abattu | مْحْزُون | m7zoun | رَانِي مْحْزُون | Je suis triste | A2 | emotion |
 | DZ-519 | en colère | زَعْلَان | z3lan | رَانِي زَعْلَان | Je suis en colère | A2 | emotion |
 | DZ-520 | confiance | ثِقَة | thiqa | عَنْدِي ثِقَة فِيه | J’ai confiance en lui | B1 | emotion |
 | DZ-521 | méfiant | مْشَكِّك | mchakkek | مَا نْثِقْش فِيه | Je ne lui fais pas confiance | B1 | emotion |
 | DZ-522 | reconnaissant | مْشَكِّر | mshakker | رَانِي مْشَكِّر | Je suis reconnaissant | B1 | emotion |
-| DZ-523 | surpris | مْدَهْش | mdehch | تْعَبْلِت! | J’ai été surpris ! | A2 | emotion |
+| DZ-523 | surpris | مْدَهْش | mdehch | رَانِي مْدَهْش! | J’ai été surpris ! | A2 | emotion |
 | DZ-524 | gêné | مْحَايِج | m7ayej | رَانِي مْحَايِج | Je suis gêné | B1 | emotion |
 | DZ-525 | paniqué | خَايِف | khayef | رَانِي خَايِف | J’ai peur | B1 | emotion |
 | DZ-526 | rancœur | حِقْد | 7iqd | عَنْدُو حِقْد | Il garde rancune | B1 | emotion |
@@ -314,7 +314,7 @@ Format fiche : **fr** → **arab** (voyellisé) + **latn** + exemples.
 | DZ-734 | belle-famille | حُمَا | 7ouma | رُوح عِنْد الحُمَا | Va chez la belle-famille | B1 | famille |
 | DZ-735 | beau-frère | صِهْر | sihr | صِهْرِي جَا | Mon beau-frère est venu | B1 | famille |
 | DZ-736 | belle-sœur | صِهْرَة | sihra | صِهْرَتِي | Ma belle-sœur | B1 | famille |
-| DZ-737 | cousin(e) | عَمّ / خَالَة | 3amm | عَمِّي | Mon oncle | A2 | famille |
+| DZ-737 | cousin(e) | وَلَدْ عَمّ / بِنْتْ عَمّ | wled 3amm / bent 3amm | وَلَدْ عَمِّي | Mon cousin | A2 | famille |
 | DZ-738 | dispute | خِصَام | khisam | رَاهُ خِصَام | Y’a une dispute | B1 | relation |
 | DZ-739 | réconciliation | صُلْح | sol7 | دَارُوا صُلْح | Ils se sont réconciliés | B1 | relation |
 | DZ-740 | rupture | فِرَاق | firaq | دَارُوا فِرَاق | Ils ont rompu | B1 | relation |
